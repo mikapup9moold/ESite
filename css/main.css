@@ -30,7 +30,7 @@ h2 {
 }
 
 #header {
-	background-image: url("../img/header4.jpg");
+	background-image: url("../img/header1.jpg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center top;
@@ -53,14 +53,14 @@ h2 {
 .title {
 	color: white;
 	text-align: center;
-	margin-top: 5vw;
+	margin-top: 2vw;
 	background-color: rgba(0, 0, 0, .7);
 	font-family: 'Bad Script', cursive;
 }
 
 .bg-resp {
-	max-width: 1384px;
-	max-height: 25.27vw;
+	max-width: 1689px;
+	max-height: 20.72vw;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: linear-gradient(top, black, black 50%, transparent 50%, transparent 100%);
