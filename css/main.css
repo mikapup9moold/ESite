@@ -1,5 +1,5 @@
 * {
-	border: 1px solid red !important;
+//	border: 1px solid red !important;
 }
 
 * {
@@ -11,6 +11,59 @@
 
 img, embed, object, video {
 	max-width: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-size: 4vw;
+	margin: 0;
+	color: #D7A700;
+}
+
+h2 {
+
+	font-size: 2vw;
+	margin: 0;
+}
+
+#header {
+	background-image: url("../img/header4.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+	width: 100vw;
+	height: 350px;
+}
+
+.h-title {
+	font-size: 2vw;
+	padding: 15px;
+}
+
+.h-menu {
+	font-family: 'Lato', sans-serif;
+	text-align: right;
+	font-size: 20px;
+	padding: 15px;
+}
+
+.title {
+	color: white;
+	text-align: center;
+	margin-top: 5vw;
+	background-color: rgba(0, 0, 0, .7);
+	font-family: 'Bad Script', cursive;
+}
+
+.bg-resp {
+	max-width: 1384px;
+	max-height: 25.27vw;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(top, black, black 50%, transparent 50%, transparent 100%);
 }
 
 .container {
