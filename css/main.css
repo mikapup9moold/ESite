@@ -1,5 +1,5 @@
 * {
-//	border: 1px solid red !important;
+	border: 1px solid red !important;
 }
 
 * {
@@ -15,16 +15,17 @@ img, embed, object, video {
 
 body {
 	margin: 0;
+	font-family: 'Lato', sans-serif;
 }
 
 h1 {
 	font-size: 4.5vw;
 	margin: 0;
 	color: #D7A700;
+	font-family: 'Dancing script', cursive;
 }
 
 h2 {
-
 	font-size: 2vw;
 	margin: 0;
 }
@@ -63,11 +64,38 @@ li:hover {
 }
 
 .h-menu {
-	font-family: 'Lato', sans-serif;
 	text-align: right;
 	font-size: 20px;
 	color: white;
 	padding: 15px;
+}
+
+.c {
+	text-align: center;
+}
+
+#mission {
+	margin-top: calc(-350px + 25vw);
+}
+
+.m-title-g {
+	font-size: 5vw;
+}
+
+.m-title-b {
+	font-size: 4vw;
+}
+
+.m-blurb {
+	margin-right: 20%;
+	margin-left: 20%;
+	font-size: 1.5vw;
+}
+
+.dash {
+	font-family: 'Kaushan script', cursive;
+	font-size: 4vw;
+	margin-bottom: -3vw;
 }
 
 .title {
@@ -76,7 +104,12 @@ li:hover {
 	margin-top: 4vw;
 	padding-top: .5vw;
 	background-color: rgba(0, 0, 0, .7);
-	font-family: 'Dancing script', cursive;
+}
+
+.link {
+	text-decoration: underline;
+	font-size: 1.5vw;
+	font-weight: bold;
 }
 
 .bg-resp {
