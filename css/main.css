@@ -44,6 +44,20 @@ h3 {
 	height: 350px;
 }
 
+#footer {
+	background-image: url("../img/thanks.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center bottom;
+	height: 500px;
+	margin-top: calc(-500px + 27vw);
+}
+
+.f-blurb {
+	margin-top: calc(500px - 10vw);
+	background-color: rgba(0, 0, 0, .7);
+}
+
 .h-title {
 	font-size: 2vw;
 	font-family: 'Kaushan script', cursive;
@@ -89,6 +103,18 @@ li:hover {
 	font-size: 20px;
 	color: white;
 	padding: 15px;
+}
+
+.f-menu {
+	padding-top: 6vw;
+	padding-right: 25px;
+}
+
+.f-copyright {
+	padding-top: 6vw;
+	padding-left: 25px;
+	color: white;
+	font-size: 20px;
 }
 
 .c {
