@@ -30,6 +30,12 @@ h2 {
 	margin: 0;
 }
 
+h3 {
+	font-size: 3vw;
+	margin: 0;
+	font-family: 'Dancing script', cursive;
+}
+
 #header {
 	background-image: url("../img/header1.jpg");
 	background-repeat: no-repeat;
@@ -156,7 +162,7 @@ li:hover {
 
 .c-m-div {
 	position: relative;
-	padding-top: 30px;
+	padding-top: 50px;
 	padding-bottom: 30px;
 	margin-left: 4.165%;
 	margin-right: 4.165%;
@@ -184,7 +190,7 @@ li:hover {
 
 .b-right {
 	position: absolute;
-	top: 90px;
+	top: 110px;
 	width: 118%;
 	height: 280px;
 	border-right: 5px solid #D7A700;
@@ -247,7 +253,6 @@ li:hover {
 
 @media screen and (max-width: 1217px) {
 	.b-right {
-		top: calc((25vw*1.326*.38865)/2 + (55.75px / 2));
-		height: calc((25vw * 1.326) * .61135);
+		display: none;
 	}
 }
