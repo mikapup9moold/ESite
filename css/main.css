@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-	font-size: 4vw;
+	font-size: 4.5vw;
 	margin: 0;
 	color: #D7A700;
 }
@@ -40,22 +40,43 @@ h2 {
 
 .h-title {
 	font-size: 2vw;
+	font-family: 'Kaushan script', cursive;
+	color: white;
 	padding: 15px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline;
+	margin-left: 15px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+li:hover {
+	text-decoration: underline;
 }
 
 .h-menu {
 	font-family: 'Lato', sans-serif;
 	text-align: right;
 	font-size: 20px;
+	color: white;
 	padding: 15px;
 }
 
 .title {
 	color: white;
 	text-align: center;
-	margin-top: 2vw;
+	margin-top: 4vw;
+	padding-top: .5vw;
 	background-color: rgba(0, 0, 0, .7);
-	font-family: 'Bad Script', cursive;
+	font-family: 'Dancing script', cursive;
 }
 
 .bg-resp {
