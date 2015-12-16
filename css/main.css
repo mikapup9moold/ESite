@@ -1,5 +1,5 @@
 * {
-	border: 1px solid red !important;
+//	border: 1px solid red !important;
 }
 
 * {
@@ -89,7 +89,12 @@ li:hover {
 .m-blurb {
 	margin-right: 20%;
 	margin-left: 20%;
-	font-size: 1.5vw;
+	font-size: 1.8vw;
+}
+
+.m-image {
+	padding-left: 5%;
+	padding-right: 8%;
 }
 
 .dash {
