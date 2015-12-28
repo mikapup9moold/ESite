@@ -36,6 +36,10 @@ h3 {
 	font-family: 'Dancing script', cursive;
 }
 
+h4 {
+	font-size: 2vw;
+}
+
 #header {
 	background-image: url("../img/header1.jpg");
 	background-repeat: no-repeat;
@@ -226,6 +230,34 @@ li:hover {
 .modal-content {
 	text-align: left;
 	color: black;
+}
+
+.mod-l-text {
+	padding-left: 30px;
+	padding-right: 10px;
+	height: 310px;
+}
+
+.mod-l-top {
+	height: 85%;
+}
+
+.mod-l-bot {
+	height: 15%;
+}
+
+.mod-blurb {
+	text-indent: 30px;
+}
+
+.mod-btn {
+	padding-left: 5px;
+}
+
+.rbord {
+	border: 2px solid black;
+	border-radius: 25px;
+	padding: 10px;
 }
 
 .dcont {
