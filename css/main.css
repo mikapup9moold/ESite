@@ -223,7 +223,12 @@ li:hover {
 	z-index: -1;
 }
 
-.container {
+.modal-content {
+	text-align: left;
+	color: black;
+}
+
+.dcont {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
