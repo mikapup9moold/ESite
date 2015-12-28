@@ -9,12 +9,23 @@
 		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 		<script src="js/app.js" type="text/javascript"></script>
+
 	</head>
 	<body>
-		<div id="header" class="container">
-			<div class="bg-resp container">
+		<div id="header" class="dcont">
+			<div class="bg-resp dcont">
 				<div class="col-3 h-title">Eriginal Crafts</div>
 				<div class="col-9 h-menu">
 					<ul>
@@ -24,12 +35,11 @@
 						<li>Cart \[]</li>
 					</ul>
 				</div>
-				<div class="col-12 title"><h1>Eriginal Crafts</h1><h2>Authentic Handmade Japanese Paper Crafts</h2>
-				</div>
+				<div class="col-12 title"><h1>Eriginal Crafts</h1><h2>Authentic Handmade Japanese Paper Crafts</h2></div>
 			</div>
 		</div>
 
-		<div id="mission" class="container">
+		<div id="mission" class="dcont">
 			<div class="col-6">
 				<div class="col-12 c"><h1 class="m-title-g">Experience</h1><h2 class="m-title-b">Handmade Beauty</h2><h2 class="dash">'</h2></div>
 				<div class="col-12 c"><p class="m-blurb">Each and every design is inspired by Japanese culture and skillfully crafted using precious Yuzen-Washi paper.</p></div>
@@ -38,42 +48,152 @@
 			<div class="col-6 m-image"><img src="img/bangle.jpg"></div>
 		</div>
 
-		<div id="collection" class="container">
+		<div id="collection" class="dcont">
 			<div class="col-12"><img class="c-image" src="img/collection_title.jpg"></div>
-			<div class="col-12 c-menu container">
-				<div class="col-3 c-m-div b-bot c">
+			<div class="col-12 c-menu dcont">
+				<div class="col-3 c-m-div b-bot c" data-toggle="modal" data-target="#gcardModal">
 					<div class="b-right"></div>
 					<img class="c-m-item" src="img/kimonog.jpg">
 					<h3>Greeting Cards</h3>
 				</div>
-				<div class="col-3 c-m-div b-bot c">
+				<div class="col-3 c-m-div b-bot c" data-toggle="modal" data-target="#pictModal">
 					<div class="b-right"></div>
 					<img class="c-m-item" src="img/kabukii.jpg">
 					<h3>Pictures</h3>
 				</div>
-				<div class="col-3 c-m-div b-bot c">
+				<div class="col-3 c-m-div b-bot c" data-toggle="modal" data-target="#printsModal">
 					<img class="c-m-item" src="img/agirl.jpg">
 					<h3>Prints</h3>
 				</div>
-				<div class="col-3 c-m-div c">
+				<div class="col-3 c-m-div c" data-toggle="modal" data-target="#bangsModal">
 					<div class="b-right"></div>
 					<img class="c-m-item" src="img/agirl.jpg">
 					<h3>Bangles</h3>
 				</div>
-				<div class="col-3 c-m-div c">
+				<div class="col-3 c-m-div c" data-toggle="modal" data-target="#earsModal">
 					<div class="b-right"></div>
 					<img class="c-m-item" src="img/kimonog.jpg">
 					<h3>Earrings</h3>
 				</div>
-				<div class="col-3 c-m-div c">
+				<div class="col-3 c-m-div c" data-toggle="modal" data-target="#ornaModal">
 					<img class="c-m-item" src="img/kabukii.jpg">
 					<h3>Ornaments</h3>
 				</div>
 			</div>
 		</div>
 
-		<div id="footer" class="container">
-			<div class="f-blurb container">
+		<!-- *** Modals *** -->
+
+		<!-- Greeting Cards -->
+		<div class="modal fade" id="gcardModal" tabindex="-1" role="dialog" aria-labelledby="Greeting Cards Modal">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="Greeting Cards Modal">Greeting Cards</h3>
+					</div>
+					<div class="modal-body">
+						Cards go here!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Pictures -->
+		<div class="modal fade" id="pictModal" tabindex="-1" role="dialog" aria-labelledby="Pictures Modal">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="Pictures Modal">Pictures</h3>
+					</div>
+					<div class="modal-body">
+						Pictures go here!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Prints -->
+		<div class="modal fade" id="printsModal" tabindex="-1" role="dialog" aria-labelledby="Prints Modal">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="Prints Modal">Prints</h3>
+					</div>
+					<div class="modal-body">
+						Prints go here!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bangles -->
+		<div class="modal fade" id="bangsModal" tabindex="-1" role="dialog" aria-labelledby="Bangles Modal">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="Bangles Modal">Bangles</h3>
+					</div>
+					<div class="modal-body">
+						Bangles go here!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Earrings -->
+		<div class="modal fade" id="earsModal" tabindex="-1" role="dialog" aria-labelledby="Earrings Modal">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="Greeting Cards Modal">Earrings</h3>
+					</div>
+					<div class="modal-body">
+						Earrings go here!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Ornaments -->
+		<div class="modal fade" id="ornaModal" tabindex="-1" role="dialog" aria-labelledby="Ornaments Modal">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="Greeting Cards Modal">Ornaments</h3>
+					</div>
+					<div class="modal-body">
+						Ornaments go here!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer" class="dcont">
+			<div class="f-blurb dcont">
 				<div class="col-3 f-copyright">Copyright 2015 Eriginal Crafts LLC.</div>
 				<div class="col-9 h-menu f-menu">
 					<ul>
