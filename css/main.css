@@ -257,6 +257,8 @@ li:hover {
 .mod-gallery {
 	width: calc(33.33% - 15px);
 	margin-left: 15px;
+	height: 334px;
+	overflow-y: scroll;
 }
 
 .rbord {
