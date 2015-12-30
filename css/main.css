@@ -258,13 +258,35 @@ li:hover {
 	width: calc(33.33% - 15px);
 	margin-left: 15px;
 	height: 334px;
+	border: 2px solid black;
+	border-radius: 25px;
+}
+
+.mod-gallery-in {
+	width: calc(100% - 10px);
+	height: 316px;
+	border-radius: 25px;
+	margin-top: 7px;
+	padding-left: 10px;
+	padding-top: 3px;
 	overflow-y: scroll;
+}
+
+.mod-gallery-img {
+	width: 45%;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 .rbord {
 	border: 2px solid black;
 	border-radius: 25px;
 	padding: 10px;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .dcont {
