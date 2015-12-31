@@ -235,7 +235,7 @@ li:hover {
 .mod-l-text {
 	padding-left: 30px;
 	padding-right: 10px;
-	height: 310px;
+	height: 27vw;
 }
 
 .mod-l-top {
@@ -257,14 +257,14 @@ li:hover {
 .mod-gallery {
 	width: calc(33.33% - 15px);
 	margin-left: 15px;
-	height: 334px;
+	height: 28.99vw;
 	border: 2px solid black;
 	border-radius: 25px;
 }
 
 .mod-gallery-in {
 	width: calc(100% - 10px);
-	height: 316px;
+	height: calc(28.99vw - 18px);
 	border-radius: 25px;
 	margin-top: 7px;
 	padding-left: 10px;
@@ -346,5 +346,19 @@ li:hover {
 @media screen and (max-width: 1217px) {
 	.b-right {
 		display: none;
+	}
+}
+
+@media (max-width: 1150px) {
+	.mod-l-text {
+		height: 31vw;
+	}
+
+	.mod-gallery {
+		height: 33.35vw;
+	}
+
+	.mod-gallery-in {
+		height: calc(33.35vw - 18px);
 	}
 }
