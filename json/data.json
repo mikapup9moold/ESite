@@ -1,0 +1,8 @@
+{"menu" : [ {"title" : "Greeting Cards", "img" : "img/kimonog.jpg"},
+			{"title" : "Pictures", 		 "img" : "img/kabukii.jpg"},
+			{"title" : "Prints", 		 "img" : "img/agirl.jpg"  },
+			{"title" : "Bangles",		 "img" : "img/agirl.jpg"  },
+			{"title" : "Earrings", 		 "img" : "img/kimonog.jpg"},
+			{"title" : "Ornaments", 	 "img" : "img/kabukii.jpg"}
+		  ]
+}

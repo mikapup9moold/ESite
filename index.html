@@ -14,10 +14,11 @@
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+		<script src="js/inventory-directives.js" type="text/javascript"></script>
 		<script src="js/app.js" type="text/javascript"></script>
-
 	</head>
-	<body>
+	<body ng-app="eStore">
 		<div id="header" class="dcont">
 			<div class="bg-resp dcont">
 				<div class="col-3 h-title">Eriginal Crafts</div>
@@ -42,7 +43,7 @@
 			<div class="col-6 m-image"><img src="img/bangle.jpg"></div>
 		</div>
 
-		<div id="collection" class="dcont">
+		<div ng-controller="InventoryController as item" id="collection" class="dcont">
 			<div class="col-12"><img class="c-image" src="img/collection_title.jpg"></div>
 			<div class="col-12 c-menu dcont">
 				<div class="col-3 c-m-div b-bot c" data-toggle="modal" data-target="#gcardModal">
