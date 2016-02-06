@@ -1,8 +1,8 @@
-{"menu" : [ {"title" : "Greeting Cards", "img" : "img/kimonog.jpg"},
-			{"title" : "Pictures", 		 "img" : "img/kabukii.jpg"},
-			{"title" : "Prints", 		 "img" : "img/agirl.jpg"  },
-			{"title" : "Bangles",		 "img" : "img/agirl.jpg"  },
-			{"title" : "Earrings", 		 "img" : "img/kimonog.jpg"},
-			{"title" : "Ornaments", 	 "img" : "img/kabukii.jpg"}
-		  ]
+{"menu" :   {"Greeting Cards" : "img/kimonog.jpg",
+			"Pictures" 	  	  : "img/kabukii.jpg",
+			"Prints" 		  : "img/agirl.jpg"  ,
+			"Bangles"		  : "img/agirl.jpg"  ,
+			"Earrings" 	      : "img/kimonog.jpg",
+			"Ornaments" 	  : "img/kabukii.jpg"
+		}		  
 }
