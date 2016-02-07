@@ -8,7 +8,31 @@
         "price" : "$4.99",
         "qty" : "30"
       },
+      "1Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
       "Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "1Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Kabukii Man" : {
         "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
         "img" : "img/kabukii.jpg",
         "price" : "$4.99",
@@ -20,50 +44,37 @@
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl1" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man1" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl1" : {
+      "1Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl2" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man2" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl2" : {
+      "2Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       }
     },
-    "modal" : "#bangsModal"
+    "modal" : "bangsModal"
   },
   "Earrings" : {
     "img" : "img/kimonog.jpg",
-    "modal" : "#earsModal",
     "inv" : {
       "Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "1Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Anime Girl" : {
         "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
         "img" : "img/agirl.jpg",
         "price" : "$4.99",
@@ -75,55 +86,55 @@
         "price" : "$4.99",
         "qty" : "30"
       },
+      "1Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
       "Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl1" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man1" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl1" : {
+      "1Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl2" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man2" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl2" : {
+      "2Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       }
-    }
+    },
+    "modal" : "earsModal"
   },
   "Greeting Cards" : {
     "img" : "img/kabukii.jpg",
-    "modal" : "#gcardModal",
     "inv" : {
       "Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "1Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Anime Girl" : {
         "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
         "img" : "img/agirl.jpg",
         "price" : "$4.99",
@@ -135,55 +146,55 @@
         "price" : "$4.99",
         "qty" : "30"
       },
+      "1Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
       "Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl1" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man1" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl1" : {
+      "1Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl2" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man2" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl2" : {
+      "2Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       }
-    }
+    },
+    "modal" : "gcardModal"
   },
   "Ornaments" : {
     "img" : "img/kabukii.jpg",
-    "modal" : "#ornaModal",
     "inv" : {
       "Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "1Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Anime Girl" : {
         "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
         "img" : "img/agirl.jpg",
         "price" : "$4.99",
@@ -195,55 +206,55 @@
         "price" : "$4.99",
         "qty" : "30"
       },
+      "1Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
       "Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl1" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man1" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl1" : {
+      "1Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl2" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man2" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl2" : {
+      "2Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       }
-    }
+    },
+    "modal" : "ornaModal"
   },
   "Pictures" : {
     "img" : "img/agirl.jpg",
-    "modal" : "#pictModal",
     "inv" : {
       "Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "1Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Anime Girl" : {
         "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
         "img" : "img/agirl.jpg",
         "price" : "$4.99",
@@ -255,55 +266,55 @@
         "price" : "$4.99",
         "qty" : "30"
       },
+      "1Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
       "Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl1" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man1" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl1" : {
+      "1Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl2" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man2" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl2" : {
+      "2Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       }
-    }
+    },
+    "modal" : "pictModal"
   },
   "Prints" : {
     "img" : "img/kimonog.jpg",
-    "modal" : "#printsModal",
     "inv" : {
       "Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "1Anime Girl" : {
+        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
+        "img" : "img/agirl.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Anime Girl" : {
         "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
         "img" : "img/agirl.jpg",
         "price" : "$4.99",
@@ -315,48 +326,37 @@
         "price" : "$4.99",
         "qty" : "30"
       },
+      "1Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
+      "2Kabukii Man" : {
+        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
+        "img" : "img/kabukii.jpg",
+        "price" : "$4.99",
+        "qty" : "30"
+      },
       "Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl1" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man1" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl1" : {
+      "1Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       },
-      "Anime Girl2" : {
-        "blurb" : "This is Anime Girl.  She is very kawaii and awesome.  Notice how she is neat like you.",
-        "img" : "img/agirl.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kabukii Man2" : {
-        "blurb" : "This is Kabukii Man.  He is a very fierce warrior.  He has a sword that is very cool and very neat.",
-        "img" : "img/kabukii.jpg",
-        "price" : "$4.99",
-        "qty" : "30"
-      },
-      "Kimono Girl2" : {
+      "2Kimono Girl" : {
         "blurb" : "This is Kimono Girl She is very cute.  She is handmade with yuzen washi paper.  She has a red umbrella and is very cool and neat.",
         "img" : "img/kimonog.jpg",
         "price" : "$4.99",
         "qty" : "30"
       }
-    }
+    },
+    "modal" : "printsModal"
   }
 }

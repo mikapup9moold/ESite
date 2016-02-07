@@ -64,7 +64,7 @@
 			<div class="col-12"><img class="c-image" src="img/collection_title.jpg"></div>
 			<div class="col-12 c-menu dcont">
 
-				<div ng-repeat="(key, value) in data" class="col-3 c-m-div b-bot c" data-toggle="modal" data-target="#{{value.modal}}">
+				<div ng-repeat="(key, value) in data" ng-click="setCurrent(value.first)" class="col-3 c-m-div b-bot c" data-toggle="modal" data-target="#{{value.modal}}">
 					<div class="b-right"></div>
 					<img class="c-m-item" src="{{value.img}}">
 					<h3>{{key}}</h3>
@@ -84,13 +84,13 @@
 						<h3 class="modal-title" id="{{key}} Modal">{{key}}</h3>
 					</div>
 					<div class="modal-body dcont">
-						<div class="col-8 dcont rbord">
-							<div class="col-5"><img src="{{value.inv}}"></div>
+						<div ng-repeat="(key, value) in value.inv" ng-show="isSet(key)" class="col-8 dcont rbord">
+							<div class="col-5"><img src="{{value.img}}"></div>
 							<div class="col-7 mod-l-text">
 								<div class="col-12 mod-l-top">
-									<h4>Kimono Girl</h4>
-									<p class="mod-blurb">Yo this be Kimono Girl.  She is super cute (kawaii) and also very affordable.  Contact us at 1800ANIMAY.COM.  Neat Stuff.  She has red umbrella totally cool neat.</p>
-									<div class="col-12">$4.99 USD
+									<h4>{{key}}</h4>
+									<p class="mod-blurb">{{value.blurb}}</p>
+									<div class="col-12">{{value.price}} USD
 										<span class="pull-right">
 											<label>Qty :</label>
 											<select name="quantity" autocomplete="off">
@@ -136,20 +136,9 @@
 						</div>
 						<div class="mod-gallery">
 							<div class="mod-gallery-in flex">
-								<div ng-repeat="(key, value) in value.inv" class="mod-gallery-img">
+								<div ng-repeat="(key, value) in value.inv" ng-click="setCurrent(key)" class="mod-gallery-img ng-class:{'mgi-bord' : isSet(key)}">
 									<img src="{{value.img}}">
 								</div>
-<!--								<div class="mod-gallery-img"><img src="img/agirl.jpg"></div>
-								<div class="mod-gallery-img"><img src="img/kabukii.jpg"></div>
-								<div class="mod-gallery-img"><img src="img/kimonog.jpg"></div>
-								<div class="mod-gallery-img"><img src="img/agirl.jpg"></div>
-								<div class="mod-gallery-img"><img src="img/kabukii.jpg"></div>
-								<div class="mod-gallery-img"><img src="img/kimonog.jpg"></div>
-								<div class="mod-gallery-img"><img src="img/agirl.jpg"></div>
-								<div class="mod-gallery-img"><img src="img/kabukii.jpg"></div>
-								<div class="mod-gallery-img"><img src="img/kimonog.jpg"></div>
-								<div class="mod-gallery-img"><img src="img/agirl.jpg"></div>
-								<div class="mod-gallery-img"><img src="img/kabukii.jpg"></div> -->
 							</div>
 						</div>
 					</div>
@@ -159,96 +148,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- Pictures -->
-<!--		<div class="modal fade" id="pictModal" tabindex="-1" role="dialog" aria-labelledby="Pictures Modal">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h3 class="modal-title" id="Pictures Modal">Pictures</h3>
-					</div>
-					<div class="modal-body">
-						Pictures go here!
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Prints -->
-<!--		<div class="modal fade" id="printsModal" tabindex="-1" role="dialog" aria-labelledby="Prints Modal">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h3 class="modal-title" id="Prints Modal">Prints</h3>
-					</div>
-					<div class="modal-body">
-						Prints go here!
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-		<!-- Bangles -->
-<!--		<div class="modal fade" id="bangsModal" tabindex="-1" role="dialog" aria-labelledby="Bangles Modal">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h3 class="modal-title" id="Bangles Modal">Bangles</h3>
-					</div>
-					<div class="modal-body">
-						Bangles go here!
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-		<!-- Earrings -->
-<!--		<div class="modal fade" id="earsModal" tabindex="-1" role="dialog" aria-labelledby="Earrings Modal">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h3 class="modal-title" id="Greeting Cards Modal">Earrings</h3>
-					</div>
-					<div class="modal-body">
-						Earrings go here!
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-		<!-- Ornaments -->
-<!--		<div class="modal fade" id="ornaModal" tabindex="-1" role="dialog" aria-labelledby="Ornaments Modal">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h3 class="modal-title" id="Greeting Cards Modal">Ornaments</h3>
-					</div>
-					<div class="modal-body">
-						Ornaments go here!
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>-->
 
 		<div id="footer" class="dcont">
 			<div class="f-blurb dcont">
