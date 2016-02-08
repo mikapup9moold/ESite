@@ -64,10 +64,10 @@
 			<div class="col-12"><img class="c-image" src="img/collection_title.jpg"></div>
 			<div class="col-12 c-menu dcont">
 
-				<div ng-repeat="(key, value) in data" ng-click="setCurrent(value.first)" class="col-3 c-m-div b-bot c" data-toggle="modal" data-target="#{{value.modal}}">
-					<div class="b-right"></div>
+				<div ng-repeat="(key, value) in data" ng-click="setCurrent(value.first)" class="col-3 c-m-div c ng-class:{'b-bot' : value.bot}" data-toggle="modal" data-target="#{{value.modal}}">
+					<div class="ng-class:{'b-right' : value.edge}"></div>
 					<img class="c-m-item" src="{{value.img}}">
-					<h3>{{key}}</h3>
+					<h3>{{key + value.edge}}</h3>
 				</div>
 
 			</div>
