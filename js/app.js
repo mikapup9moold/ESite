@@ -13,5 +13,13 @@
 		$scope.isSet = function(itemName) {
 			return $scope.current === itemName;
 		};
+		$scope.range = function(num) {
+			var range = [];
+			num = parseInt(num);
+			for(i = 1; i <= num; i++) {
+				range.push(i);
+			}
+			return range;
+		};
 	});
 })();
