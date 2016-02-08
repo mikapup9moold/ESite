@@ -233,10 +233,15 @@ li:hover {
 	color: black;
 }
 
+.mod-l-img {
+	margin: auto;
+}
+
 .mod-l-text {
 	padding-left: 30px;
 	padding-right: 10px;
 	height: 27vw;
+	margin: auto;
 }
 
 .mod-l-top {

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Eriginal Crafts</title>
+		<title>Lowgami</title>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -38,7 +38,7 @@
 	<body ng-app="eStore" ng-controller="InventoryController">
 		<div id="header" class="dcont">
 			<div class="bg-resp dcont">
-				<div class="col-3 h-title">Eriginal Crafts</div>
+				<div class="col-3 h-title">Lowgami</div>
 				<div class="col-9 h-menu">
 					<ul>
 						<li>Register</li>
@@ -47,7 +47,7 @@
 						<li>Cart<span class="glyphicon glyphicon-shopping-cart"></span></li>
 					</ul>
 				</div>
-				<div class="col-12 title"><h1>Eriginal Crafts</h1><h2>Authentic Handmade Japanese Paper Crafts</h2></div>
+				<div class="col-12 title"><h1>Lowgami</h1><h2>Authentic Handmade Japanese Paper Crafts</h2></div>
 			</div>
 		</div>
 
@@ -55,7 +55,7 @@
 			<div class="col-6">
 				<div class="col-12 c"><h1 class="m-title-g">Experience</h1><h2 class="m-title-b">Handmade Beauty</h2><h2 class="dash">'</h2></div>
 				<div class="col-12 c"><p class="m-blurb">Each and every design is inspired by Japanese culture and skillfully crafted using precious Yuzen-Washi paper.</p></div>
-				<div class="col-12 c link">OUR PROCESS</div>
+				<div class="col-12 c link">MY STORY</div>
 			</div>
 			<div class="col-6 m-image"><img src="img/bangle.jpg"></div>
 		</div>
@@ -67,7 +67,7 @@
 				<div ng-repeat="(key, value) in data" ng-click="setCurrent(value.first)" class="col-3 c-m-div c ng-class:{'b-bot' : value.bot}" data-toggle="modal" data-target="#{{value.modal}}">
 					<div class="ng-class:{'b-right' : value.edge}"></div>
 					<img class="c-m-item" src="{{value.img}}">
-					<h3>{{key + value.edge}}</h3>
+					<h3>{{key}}</h3>
 				</div>
 
 			</div>
@@ -75,7 +75,6 @@
 
 		<!-- *** Modals *** -->
 
-		<!-- Greeting Cards -->
 		<div ng-repeat="(key, value) in data" class="modal fade" id="{{value.modal}}" tabindex="-1" role="dialog" aria-labelledby="{{Modal}} key">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
@@ -85,7 +84,7 @@
 					</div>
 					<div class="modal-body dcont">
 						<div ng-repeat="(key, value) in value.inv" ng-show="isSet(key)" class="col-8 dcont rbord">
-							<div class="col-5"><img src="{{value.img}}"></div>
+							<div class="col-5 mod-l-img"><img src="{{value.img}}"></div>
 							<div class="col-7 mod-l-text">
 								<div class="col-12 mod-l-top">
 									<h4>{{key}}</h4>
@@ -122,8 +121,8 @@
 
 		<div id="footer" class="dcont">
 			<div class="f-blurb dcont">
-				<div class="col-3 f-copyright">Copyright 2015 Eriginal Crafts LLC.</div>
-				<div class="col-9 h-menu f-menu">
+				<div class="col-5 f-copyright">Copyright 2016 Lowgami LLC.</div>
+				<div class="col-7 h-menu f-menu">
 					<ul>
 						<li>About</li>
 						<li>FAQ</li>
@@ -135,3 +134,4 @@
 	</body>
 
 </html>
+
