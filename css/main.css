@@ -177,7 +177,7 @@ li:hover {
 	background-image: linear-gradient(top, black, black 50%, transparent 50%, transparent 100%);
 }
 
-#collection {
+.collection {
 	margin-top: 5vw;
 	margin-bottom: 5vw;
 }

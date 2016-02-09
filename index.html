@@ -60,8 +60,8 @@
 			<div class="col-6 m-image"><img src="img/bangle.jpg"></div>
 		</div>
 
-		<div id="collection" class="dcont">
-			<div class="col-12"><img class="c-image" src="img/collection_title.jpg"></div>
+		<div class="collection dcont">
+			<div class="col-12" id="parallaxContainer"><img class="c-image" src="img/collection_title.jpg"></div>
 			<div class="col-12 c-menu dcont">
 
 				<div ng-repeat="(key, value) in data" ng-click="setCurrent(value.first)" class="col-3 c-m-div c ng-class:{'b-bot' : value.bot}" data-toggle="modal" data-target="#{{value.modal}}">
@@ -131,6 +131,7 @@
 				</div>
 			</div>
 		</div>
+	<script src="js/parallax.js" type="text/javascript"></script>
 	</body>
 
 </html>
