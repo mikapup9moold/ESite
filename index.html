@@ -130,14 +130,14 @@
 					<div class="modal-body dcont">
 						<div ng-repeat="(key, value) in cartCat" ng-hide="$last" class="col-12 dcont">
 							<div class="col-2">
-								<img src="{{value.img}}">
+								<img src="{{itemList[key].img}}">
 							</div>
 							<div class="col-6">
 								{{key}}<br>
-								{{value.blurb}}
+								{{itemList[key].blurb}}
 							</div>
 							<div class="col-4">
-								{{value.price + ' x ' + value.num}}
+								{{itemList[key].price + ' x ' + value.num}}
 							</div>
 						</div>
 						<div class="col-12">
