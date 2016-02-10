@@ -43,7 +43,7 @@
 			for(var item in list) {
 				obj[item] = {};
 				obj[item].num = list[item];
-				total += (list[item]);
+				total += (list[item] * $scope.itemList[item].price);
 			}
 			obj.total = total;
 			return obj;

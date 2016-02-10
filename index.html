@@ -89,7 +89,7 @@
 								<div class="col-12 mod-l-top">
 									<h4>{{key}}</h4>
 									<p class="mod-blurb">{{value.blurb}}</p>
-									<div class="col-12">{{value.price}} USD
+									<div class="col-12">{{value.price | currency}} USD
 										<span class="pull-right">
 											<label>Qty :</label>
 											<select id="{{key | deleteSpaces}}Qty" name="quantity" autocomplete="off">
@@ -134,14 +134,14 @@
 							</div>
 							<div class="col-6">
 								{{key}}<br>
-								{{itemList[key].blurb}}
+								{{itemList[key].blurb | limitTo : 50}}...
 							</div>
 							<div class="col-4">
 								{{itemList[key].price + ' x ' + value.num}}
 							</div>
 						</div>
-						<div class="col-12">
-							{{'Total: ' + cartCat.total}}
+						<div ng-show="cartCat.total" class="col-12">
+							Total: {{cartCat.total | currency}}
 						</div>
 					</div>
 					<div class="modal-footer">
