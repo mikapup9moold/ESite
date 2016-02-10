@@ -5,8 +5,11 @@
 		var ref = new Firebase('https://blinding-heat-3195.firebaseio.com/menu');
 		var syncObject = $firebaseObject(ref);
 		syncObject.$bindTo($scope, "data");
-
+		$scope.itemList = {};
 		$scope.current = false;
+		$scope.buildList = function(key, value) {
+			$scope.itemList[key] = value;
+		}
 		$scope.setCurrent = function(itemName) {
 			$scope.current = itemName;
 		};
@@ -34,11 +37,22 @@
 			}
 		};
 
+		function buildHTML(list) {
+			var obj = {};
+			for(var item in list) {
+				obj[item] = $scope.itemList[item];
+				obj[item].num = list[item];
+			}
+			return obj;
+		}
+
 		$scope.buildCart = function() {
 			$scope.cart = toJSON(localStorage.cart);
 			$scope.wish = toJSON(localStorage.wish);
+			$scope.cartCat = buildHTML($scope.cart);
+			$scope.wishCat = buildHTML($scope.wish);
+		};
 
-		}
 	});
 
 	app.filter('deleteSpaces', function() {

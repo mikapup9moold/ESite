@@ -83,7 +83,7 @@
 						<h3 class="modal-title" id="{{key}} Modal">{{key}}</h3>
 					</div>
 					<div class="modal-body dcont">
-						<div ng-repeat="(key, value) in value.inv" ng-show="isSet(key)" class="col-8 dcont rbord">
+						<div ng-repeat="(key, value) in value.inv" ng-show="isSet(key)" ng-init="buildList(key, value)" class="col-8 dcont rbord">
 							<div class="col-5 mod-l-img"><img src="{{value.img}}"></div>
 							<div class="col-7 mod-l-text">
 								<div class="col-12 mod-l-top">
@@ -127,7 +127,8 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h3 class="modal-title" id="sCart">Shopping Cart</h3>
 					</div>
-					<div class="modal-body dcont">This is what is in your shopping cart! {{cart}}
+					<div class="modal-body dcont">
+						<div ng-repeat="(key, value) in cartCat" class="col-12">{{'You have ordered ' + key + ' x' + value.num}}</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -144,7 +145,8 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h3 class="modal-title" id="sCart">Wish List</h3>
 					</div>
-					<div class="modal-body dcont">This is what is in your wish list! {{wish}}
+					<div class="modal-body dcont">
+						<div ng-repeat="(key, value) in wishCat" class="col-12">{{'You have wish for ' + key + ' x' + value.num}}</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
