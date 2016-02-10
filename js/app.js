@@ -21,12 +21,25 @@
 			}
 			return range;
 		};
-		$scope.addTo = function(item, amount, list) {
+		localStorage.cart = '';
+		localStorage.wish = '';
+		$scope.addTo = function(item, list) {
+			var id = item.replace(/\s+/g, '') + 'Qty';
+			var num = $('#' + id + ' :selected').val();
 			if(typeof(Storage) !== 'undefined') {
-				localStorage.list += (item + '#' + amount + ',');
+				localStorage[list] += (item + '#' + num + ',');
 			} else {
 				console.log('Local storage not available, store to cookies or on server linked to user account.');
 			}
+		}
+	});
+
+	app.filter('deleteSpaces', function() {
+		return function(str) {
+			if(!angular.isString(str)) {
+				return str;
+			}
+			return str.replace(/\s+/g, '');
 		}
 	});
 })();

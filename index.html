@@ -91,15 +91,15 @@
 									<div class="col-12">{{value.price}} USD
 										<span class="pull-right">
 											<label>Qty :</label>
-											<select name="quantity" autocomplete="off">
+											<select id="{{key | deleteSpaces}}Qty" name="quantity" autocomplete="off">
 												<option ng-repeat="i in range(value.qty)" value="{{i}}">{{i}}</option>
 											</select>
 										</span>
 									</div>
 								</div>
 								<div class="col-12 mod-l-bot">
-									<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-list"></span><span class="mod-btn">Wishlist</span></button>
-									<button type="button" class="btn btn-success pull-right"><span class="glyphicon glyphicon-shopping-cart"></span><span class="mod-btn">Add to Cart</span></button>
+									<button ng-click="addTo(key, 'wish')" type="button" class="btn btn-info"><span class="glyphicon glyphicon-list"></span><span class="mod-btn">Wishlist</span></button>
+									<button ng-click="addTo(key, 'cart')" type="button" class="btn btn-success pull-right"><span class="glyphicon glyphicon-shopping-cart"></span><span class="mod-btn">Add to Cart</span></button>
 								</div>
 							</div>
 						</div>
