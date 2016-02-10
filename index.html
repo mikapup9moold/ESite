@@ -43,8 +43,8 @@
 					<ul>
 						<li>Register</li>
 						<li>Sign In</li>
-						<li>Wish List</li>
-						<li>Cart<span class="glyphicon glyphicon-shopping-cart"></span></li>
+						<li data-toggle="modal" data-target="#wishList">Wish List</li>
+						<li data-toggle="modal" data-target="#cart">Cart<span class="glyphicon glyphicon-shopping-cart"></span></li>
 					</ul>
 				</div>
 				<div class="col-12 title"><h1>Lowgami</h1><h2>Authentic Handmade Japanese Paper Crafts</h2></div>
@@ -74,7 +74,7 @@
 
 		<!-- *** Modals *** -->
 
-		<div ng-repeat="(key, value) in data" class="modal fade" id="{{value.modal}}" tabindex="-1" role="dialog" aria-labelledby="{{Modal}} key">
+		<div ng-repeat="(key, value) in data" class="modal fade" id="{{value.modal}}" tabindex="-1" role="dialog" aria-labelledby="Modal {{key}}">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -110,6 +110,40 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Shopping Cart Modal -->
+		<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="Shopping Cart Modal">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="sCart">Shopping Cart</h3>
+					</div>
+					<div class="modal-body dcont">This is what is in your shopping cart!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Wish List Modal -->
+		<div class="modal fade" id="wishList" tabindex="-1" role="dialog" aria-labelledby="Wish List Modal">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="sCart">Wish List</h3>
+					</div>
+					<div class="modal-body dcont">This is what is in your wish list!
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

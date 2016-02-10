@@ -21,5 +21,12 @@
 			}
 			return range;
 		};
+		$scope.addTo = function(item, amount, list) {
+			if(typeof(Storage) !== 'undefined') {
+				localStorage.list += (item + '#' + amount + ',');
+			} else {
+				console.log('Local storage not available, store to cookies or on server linked to user account.');
+			}
+		}
 	});
 })();
