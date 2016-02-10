@@ -39,10 +39,13 @@
 
 		function buildHTML(list) {
 			var obj = {};
+			var total = 0;
 			for(var item in list) {
 				obj[item] = $scope.itemList[item];
 				obj[item].num = list[item];
+				total += (list[item]);
 			}
+			obj.total = total;
 			return obj;
 		}
 
