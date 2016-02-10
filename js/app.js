@@ -23,6 +23,7 @@
 		};
 		localStorage.cart = '';
 		localStorage.wish = '';
+
 		$scope.addTo = function(item, list) {
 			var id = item.replace(/\s+/g, '') + 'Qty';
 			var num = $('#' + id + ' :selected').val();
@@ -31,6 +32,12 @@
 			} else {
 				console.log('Local storage not available, store to cookies or on server linked to user account.');
 			}
+		};
+
+		$scope.buildCart = function() {
+			$scope.cart = toJSON(localStorage.cart);
+			$scope.wish = toJSON(localStorage.wish);
+
 		}
 	});
 
