@@ -135,10 +135,17 @@
 								<td><h5>{{key}}</h5><br>{{itemList[key].blurb | limitTo : 50}}...
 									<br><br><span ng-click="setAmount(key, 0); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="s-btn">Save to Wishlist</span>
 								</td>
-								<td>{{itemList[key].price | currency}} x {{value.num}}</td>
+								<td>
+									<form>
+										<label>{{itemList[key].price | currency}}: 
+											<input type="number" name="input" ng-model="value.num" min="0" max="99" required>
+											<input type="submit" value="Update Cart" ng-click="setAmount(key, value.num); buildCart()">
+										</label>
+									</form>
+								</td>
 							</tr>
 							<tr></tr>
-							<tr ng-show="cartCat.total">
+							<tr ng-show="cartCat.total" class="fout">
 								<td><div class="col-2"></div></td>
 								<td></td>
 								<td>Subtotal:<br>{{cartCat.total | currency}}</td>
