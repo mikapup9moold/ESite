@@ -37,7 +37,7 @@
 			}
 		};
 
-		function buildHTML(list) {
+		function buildHTML(list, set) {
 			var obj = {};
 			var total = 0;
 			for(var item in list) {
@@ -55,6 +55,22 @@
 			$scope.cartCat = buildHTML($scope.cart);
 			$scope.wishCat = buildHTML($scope.wish);
 		};
+
+		$scope.setAmount = function(key, x) {
+			$('.fout').fadeOut("fast");
+			var diff = ($scope.cartCat[key].num - x);
+			$scope.cartCat[key].num = x;
+			$scope.cartCat[key].total -= ($scope.itemList[key].price * diff);
+			var str = '';
+			for(var item in $scope.cartCat) {
+				if($scope.cartCat[item].num !== 0) {
+					str += (item + '#' + $scope.cartCat[item].num + ',');
+				}
+			}
+			str = str.replace('total#undefined,', '');
+			localStorage.cart = str;
+			$('.fout').fadeIn("slow");
+		}
 
 	});
 

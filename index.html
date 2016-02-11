@@ -149,10 +149,10 @@
 							Total: {{cartCat.total | currency}}
 						</div> -->
 						<table class="table table-striped">
-							<tr ng-repeat="(key, value) in cartCat" ng-hide="$last">
+							<tr ng-repeat="(key, value) in cartCat" ng-hide="$last" class="fout">
 								<td class="cartImg"><img src="{{itemList[key].img}}"></td>
 								<td><h5>{{key}}</h5><br>{{itemList[key].blurb | limitTo : 50}}...
-									<br><br><span>Delete &nbsp;&nbsp;|&nbsp;&nbsp; Save to Wishlist</span>
+									<br><br><span ng-click="setAmount(key, 0); buildCart()">Delete &nbsp;&nbsp;|&nbsp;&nbsp; Save to Wishlist</span>
 								</td>
 								<td>{{itemList[key].price | currency}} x {{value.num}}</td>
 							</tr>
