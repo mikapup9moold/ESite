@@ -72,6 +72,14 @@
 			$('.fout').fadeIn("slow");
 		}
 
+		$scope.swapModal = function(mod1, mod2) {
+			$("#" + mod1).on('hidden.bs.modal', function(e) {
+				$("#" + mod2).modal('show');
+				$("#" + mod1).off();
+			});
+			$("#" + mod1).modal('hide');
+		}
+
 	});
 
 	app.filter('deleteSpaces', function() {
