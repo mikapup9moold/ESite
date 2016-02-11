@@ -40,6 +40,16 @@ h4 {
 	font-size: 2vw;
 }
 
+h5 {
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.cartImg {
+	width: 100px;
+}
+
 #header {
 	background-image: url("../img/header1.jpg");
 	background-repeat: no-repeat;
