@@ -80,7 +80,8 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h3 class="modal-title" id="{{key}} Modal">{{key}}<span ng-click="buildCart(); swapModal(value.modal, 'cart')" class="glyphicon glyphicon-shopping-cart close"></span></h3>
+						<span ng-click="buildCart(); swapModal(value.modal, 'cart')" class="glyphicon glyphicon-shopping-cart close"></span>
+						<h3 class="modal-title" id="{{key}} Modal">{{key}}</h3>
 					</div>
 					<div class="modal-body dcont">
 						<div ng-repeat="(key, value) in value.inv" ng-show="isSet(key)" ng-init="buildList(key, value)" class="col-8 dcont rbord">
