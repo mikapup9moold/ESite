@@ -28,6 +28,13 @@
 		//localStorage.wish = '';
 
 		$scope.addTo = function(item, list) {
+			// Initialize localStorage of cart and wishlist if they dont exist.
+			if(typeof localStorage.cart === 'undefined') {
+				localStorage.cart = '';
+			}
+			if(typeof localStorage.wish === 'undefined') {
+				localStorage.wish = '';
+			}
 			var id = item.replace(/\s+/g, '') + 'Qty';
 			var num = $('#' + id + ' :selected').val();
 			if(typeof(Storage) !== 'undefined') {
