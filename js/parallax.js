@@ -46,7 +46,6 @@ function setup() {
 setup();
  
 function mouseScroll(e) {
-    console.log('test');
     var test = $('.modal').is(":visible");
     mouseWheelActive = true;
     if(test) {

@@ -24,8 +24,8 @@
 			}
 			return range;
 		};
-		localStorage.cart = '';
-		localStorage.wish = '';
+		//localStorage.cart = '';
+		//localStorage.wish = '';
 
 		$scope.addTo = function(item, list) {
 			var id = item.replace(/\s+/g, '') + 'Qty';
