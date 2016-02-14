@@ -39,6 +39,12 @@
 
 		$scope.moveTo = function(item, amount, list) {
 			localStorage[list] += (item + '#' + amount + ',');
+			if(list == 'cart') {
+				$scope.wishCat[item].moved = true;
+			}
+			if(list == 'wish') {
+				$scope.cartCat[item].moved = true;
+			}
 		}
 
 		function buildHTML(list) {
@@ -47,6 +53,7 @@
 			for(var item in list) {
 				obj[item] = {};
 				obj[item].num = list[item];
+				obj[item].moved = false;
 				total += (list[item] * $scope.itemList[item].price);
 			}
 			obj.total = total;

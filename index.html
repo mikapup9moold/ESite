@@ -101,7 +101,7 @@
 									</div>
 								</div>
 								<div class="col-12 mod-l-bot">
-									<button ng-click="addTo(key, 'wish')" type="button" class="btn btn-info"><span class="glyphicon glyphicon-list"></span><span class="mod-btn">Wishlist</span></button>
+									<button ng-click="addTo(key, 'wish')" type="button" class="btn btn-info"><span class="glyphicon glyphicon-list"></span><span class="mod-btn">Add to Wishlist</span></button>
 									<button ng-click="addTo(key, 'cart')" type="button" class="btn btn-success pull-right"><span class="glyphicon glyphicon-shopping-cart"></span><span class="mod-btn">Add to Cart</span></button>
 								</div>
 							</div>
@@ -127,6 +127,8 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<span ng-click="buildCart()" class="glyphicon glyphicon-shopping-cart close"></span>
+						<span ng-click="buildCart(); swapModal('cart', 'wishList')" class="glyphicon glyphicon-list close"></span>
 						<h3 class="modal-title" id="sCart">Shopping Cart</h3>
 					</div>
 					<div class="modal-body dcont">
@@ -134,7 +136,7 @@
 							<tr ng-repeat="(key, value) in cartCat" ng-hide="$last" class="fout">
 								<td class="cartImg"><img src="{{itemList[key].img}}"></td>
 								<td><h5>{{key}}</h5><br>{{itemList[key].blurb | limitTo : 50}}...
-									<br><br><span ng-click="setAmount(key, 0, 'cart'); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span ng-click="moveTo(key, value.num, 'wish')" class="s-btn">Save to Wishlist</span>
+									<br><br><span ng-click="setAmount(key, 0, 'cart'); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span ng-click="moveTo(key, value.num, 'wish')" class="s-btn">Copy to Wishlist </span><span ng-show="cartCat[key].moved" class="glyphicon glyphicon-ok green"></span>
 								</td>
 								<td>
 									<form>
@@ -166,6 +168,8 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<span ng-click="buildCart(); swapModal('wishList', 'cart')" class="glyphicon glyphicon-shopping-cart close"></span>
+						<span ng-click="buildCart();" class="glyphicon glyphicon-list close"></span>
 						<h3 class="modal-title" id="wList">Wish List</h3>
 					</div>
 					<div class="modal-body dcont">
@@ -173,7 +177,7 @@
 							<tr ng-repeat="(key, value) in wishCat" ng-hide="$last" class="fout">
 								<td class="cartImg"><img src="{{itemList[key].img}}"></td>
 								<td><h5>{{key}}</h5><br>{{itemList[key].blurb | limitTo : 50}}...
-									<br><br><span ng-click="setAmount(key, 0, 'wish'); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span ng-click="moveTo(key, value.num, 'cart')" class="s-btn">Save to Shopping Cart</span>
+									<br><br><span ng-click="setAmount(key, 0, 'wish'); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span ng-click="moveTo(key, value.num, 'cart')" class="s-btn">Copy to Shopping Cart</span><span ng-show="wishCat[key].moved" class="glyphicon glyphicon-ok green"></span>
 								</td>
 								<td>
 									<form>

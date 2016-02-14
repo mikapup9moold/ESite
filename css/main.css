@@ -305,6 +305,10 @@ li:hover {
     width: 46%;
 }
 
+.green {
+	color: green;
+}
+
 .rbord {
 	border: 2px solid black;
 	border-radius: 25px;
