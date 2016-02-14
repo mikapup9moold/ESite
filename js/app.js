@@ -37,7 +37,11 @@
 			}
 		};
 
-		function buildHTML(list, set) {
+		$scope.moveTo = function(item, amount, list) {
+			localStorage[list] += (item + '#' + amount + ',');
+		}
+
+		function buildHTML(list) {
 			var obj = {};
 			var total = 0;
 			for(var item in list) {
