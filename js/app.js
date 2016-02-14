@@ -56,19 +56,20 @@
 			$scope.wishCat = buildHTML($scope.wish);
 		};
 
-		$scope.setAmount = function(key, x) {
+		$scope.setAmount = function(key, x, type) {
 			$('.fout').fadeOut("fast");
-			var diff = ($scope.cartCat[key].num - x);
-			$scope.cartCat[key].num = x;
-			$scope.cartCat[key].total -= ($scope.itemList[key].price * diff);
+			var catalog = type + 'Cat';
+			var diff = ($scope[catalog][key].num - x);
+			$scope[catalog][key].num = x;
+			$scope[catalog][key].total -= ($scope.itemList[key].price * diff);
 			var str = '';
-			for(var item in $scope.cartCat) {
-				if($scope.cartCat[item].num !== 0) {
-					str += (item + '#' + $scope.cartCat[item].num + ',');
+			for(var item in $scope[catalog]) {
+				if($scope[catalog][item].num !== 0) {
+					str += (item + '#' + $scope[catalog][item].num + ',');
 				}
 			}
 			str = str.replace('total#undefined,', '');
-			localStorage.cart = str;
+			localStorage[type] = str;
 			$('.fout').fadeIn("slow");
 		}
 
