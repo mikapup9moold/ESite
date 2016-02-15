@@ -28,6 +28,7 @@
 		//localStorage.wish = '';
 
 		$scope.addTo = function(item, list) {
+			checkLists();
 			var id = item.replace(/\s+/g, '') + 'Qty';
 			var num = $('#' + id + ' :selected').val();
 			if(typeof(Storage) !== 'undefined') {
@@ -60,14 +61,18 @@
 			return obj;
 		}
 
-		$scope.buildCart = function() {
-			// Initialize localStorage of cart and wishlist if they dont exist.
+		function checkLists() {
 			if(typeof localStorage.cart === 'undefined') {
 				localStorage.cart = '';
 			}
 			if(typeof localStorage.wish === 'undefined') {
 				localStorage.wish = '';
 			}
+		}
+
+		$scope.buildCart = function() {
+			// Initialize localStorage of cart and wishlist if they dont exist.
+			checkLists();
 			$scope.cart = toJSON(localStorage.cart);
 			$scope.wish = toJSON(localStorage.wish);
 			$scope.cartCat = buildHTML($scope.cart);

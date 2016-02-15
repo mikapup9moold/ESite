@@ -136,7 +136,9 @@
 							<tr ng-repeat="(key, value) in cartCat" ng-hide="$last" class="fout">
 								<td class="cartImg"><img src="{{itemList[key].img}}"></td>
 								<td><h5>{{key}}</h5><br>{{itemList[key].blurb | limitTo : 50}}...
-									<br><br><span ng-click="setAmount(key, 0, 'cart'); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span ng-click="moveTo(key, value.num, 'wish')" class="s-btn">Copy to Wishlist </span><span ng-show="cartCat[key].moved" class="glyphicon glyphicon-ok green"></span>
+									<br><br><span ng-click="setAmount(key, 0, 'cart'); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<span ng-click="moveTo(key, value.num, 'wish')" class="s-btn">Copy to Wishlist </span>
+									<span ng-show="cartCat[key].moved" class="glyphicon glyphicon-ok green"></span>
 								</td>
 								<td>
 									<form>
@@ -149,8 +151,8 @@
 							</tr>
 							<tr></tr>
 							<tr ng-show="cartCat.total" class="fout">
-								<td><div class="col-2"></div></td>
 								<td></td>
+								<td>Delete All&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copy All to Wish List</td>
 								<td>Subtotal:<br>{{cartCat.total | currency}}</td>
 							</tr>
 						</table>
@@ -177,7 +179,9 @@
 							<tr ng-repeat="(key, value) in wishCat" ng-hide="$last" class="fout">
 								<td class="cartImg"><img src="{{itemList[key].img}}"></td>
 								<td><h5>{{key}}</h5><br>{{itemList[key].blurb | limitTo : 50}}...
-									<br><br><span ng-click="setAmount(key, 0, 'wish'); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span ng-click="moveTo(key, value.num, 'cart')" class="s-btn">Copy to Shopping Cart</span><span ng-show="wishCat[key].moved" class="glyphicon glyphicon-ok green"></span>
+									<br><br><span ng-click="setAmount(key, 0, 'wish'); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<span ng-click="moveTo(key, value.num, 'cart')" class="s-btn">Copy to Shopping Cart </span>
+									<span ng-show="wishCat[key].moved" class="glyphicon glyphicon-ok green"></span>
 								</td>
 								<td>
 									<form>
