@@ -46,6 +46,10 @@ h5 {
 	margin-bottom: 0;
 }
 
+table {
+	table-layout: fixed;
+}
+
 .cartImg {
 	width: 100px;
 }
