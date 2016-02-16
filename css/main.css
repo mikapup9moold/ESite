@@ -309,6 +309,12 @@ li:hover {
     width: 46%;
 }
 
+.mod-list-btn {
+	top: 15px;
+	right: 30px;
+	margin-left: 20px;
+}
+
 .green {
 	color: green;
 }
