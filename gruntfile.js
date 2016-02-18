@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-	var critical = require('critical');
+	//var critical = require('critical');
 	var Imagemin = require('imagemin');
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 			options: {
 				map: true,
 				processors: [
-					require('autoprefixer-core')({browsers: ['last 2 versions']})
+					//require('autoprefixer-core')({browsers: ['last 2 versions']})
 				]
 			},
 			dist: {
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
 		},
 
 		imagemin: {
-			static: {
+			/*static: {
 				options: {
 					optimizationLevel: 3,
 					svgoPlugins: [{removeViewBox: false}],
@@ -102,8 +102,8 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'dist/img/' : 'img/'
-				}
-			},
+				} 
+			},*/
 			dynamic: {
 				options: {
 					optimizationLevel: 3,
@@ -130,5 +130,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 
-	grunt.registerTask('default', ['postcss', 'critical', 'cssmin', 'uglify', 'htmlmin', 'responsive_images' 'imagemin']);
+	grunt.registerTask('default', ['postcss', 'critical', 'cssmin', 'uglify', 'htmlmin', 'responsive_images', 'imagemin']);
 };

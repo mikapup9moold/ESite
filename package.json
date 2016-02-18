@@ -18,5 +18,7 @@
     "grunt-postcss": "^0.7.1",
     "grunt-responsive-images": "^0.1.7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "imagemin": "^4.0.0"
+  }
 }
