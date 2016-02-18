@@ -129,4 +129,20 @@
 			return str.replace(/\s+/g, '');
 		}
 	});
+
+	app.filter('srcset', function() {
+		return function(str) {
+			if(!angular.isString(str)) {
+				return str;
+			}
+			str = str.split('.');
+			var all = '';
+			for(i = 1; i <= 5; i++) {
+				var x = i * 200;
+				all += (str[0] + '-' + x + '.' + str[1] + ' ' + x + 'w, ');
+			}
+			all = all.slice(0, -2);
+			return all;
+		}
+	});
 })();
