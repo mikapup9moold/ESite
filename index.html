@@ -80,8 +80,8 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<span ng-click="buildCart(); swapModal(value.modal, 'cart')" class="glyphicon glyphicon-shopping-cart close mod-list-btn"></span>
-						<span ng-click="buildCart(); swapModal(value.modal, 'wishList')" class="glyphicon glyphicon-list close mod-list-btn"></span>
+						<span ng-click="buildCart(); swapModal(value.modal, 'cart')" class="glyphicon glyphicon-shopping-cart close mod-list-btn" title="Shopping Cart"></span>
+						<span ng-click="buildCart(); swapModal(value.modal, 'wishList')" class="glyphicon glyphicon-list close mod-list-btn" title="Wish List"></span>
 						<h3 class="modal-title" id="{{key}} Modal">{{key}}</h3>
 					</div>
 					<div class="modal-body dcont">
@@ -127,8 +127,8 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<span ng-click="buildCart()" class="glyphicon glyphicon-shopping-cart close mod-list-btn"></span>
-						<span ng-click="buildCart(); swapModal('cart', 'wishList')" class="glyphicon glyphicon-list close mod-list-btn"></span>
+						<span ng-click="buildCart()" class="glyphicon glyphicon-shopping-cart close mod-list-btn" title="Shopping Cart"></span>
+						<span ng-click="buildCart(); swapModal('cart', 'wishList')" class="glyphicon glyphicon-list close mod-list-btn" title="Wish List"></span>
 						<h3 class="modal-title" id="sCart">Shopping Cart</h3>
 					</div>
 					<div class="modal-body dcont">
@@ -152,7 +152,11 @@
 							<tr></tr>
 							<tr ng-show="cartCat.total" class="fout">
 								<td></td>
-								<td>Delete All&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copy All to Wish List</td>
+								<td>
+									<span ng-click="deleteAll('cart'); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<span ng-click="copyAll('cart', 'wish')" class="s-btn">Copy All to Wish List</span>
+									<span ng-show="copied.cart" class="glyphicon glyphicon-ok green"></span>
+								</td>
 								<td>Subtotal:<br>{{cartCat.total | currency}}</td>
 							</tr>
 						</table>
@@ -170,8 +174,8 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<span ng-click="buildCart(); swapModal('wishList', 'cart')" class="glyphicon glyphicon-shopping-cart close mod-list-btn"></span>
-						<span ng-click="buildCart();" class="glyphicon glyphicon-list close mod-list-btn"></span>
+						<span ng-click="buildCart(); swapModal('wishList', 'cart')" class="glyphicon glyphicon-shopping-cart close mod-list-btn" title="Shopping Cart"></span>
+						<span ng-click="buildCart();" class="glyphicon glyphicon-list close mod-list-btn" title="Wish List"></span>
 						<h3 class="modal-title" id="wList">Wish List</h3>
 					</div>
 					<div class="modal-body dcont">
@@ -194,8 +198,12 @@
 							</tr>
 							<tr></tr>
 							<tr ng-show="wishCat.total" class="fout">
-								<td><div class="col-2"></div></td>
 								<td></td>
+								<td>
+									<span ng-click="deleteAll('wish'); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<span ng-click="copyAll('wish', 'cart')" class="s-btn">Copy All to Shopping Cart</span>
+									<span ng-show="copied.wish" class="glyphicon glyphicon-ok green"></span>
+								</td>
 								<td>Subtotal:<br>{{wishCat.total | currency}}</td>
 							</tr>
 						</table>

@@ -73,6 +73,10 @@
 		$scope.buildCart = function() {
 			// Initialize localStorage of cart and wishlist if they dont exist.
 			checkLists();
+
+			$scope.copied.cart = false;
+			$scope.copied.wish = false;
+
 			$scope.cart = toJSON(localStorage.cart);
 			$scope.wish = toJSON(localStorage.wish);
 			$scope.cartCat = buildHTML($scope.cart);
@@ -102,6 +106,17 @@
 				$("#" + mod1).off();
 			});
 			$("#" + mod1).modal('hide');
+		}
+		$scope.copied = {'cart' : false, 'wish' : false};
+		$scope.copyAll = function(list1, list2) {
+			localStorage[list2] += localStorage[list1];
+			$scope.copied[list1] = true;
+		}
+
+		$scope.deleteAll = function(list) {
+			var undo = 'undo' + list;
+			localStorage[undo] = localStorage[list];
+			localStorage[list] = '';
 		}
 
 	});
