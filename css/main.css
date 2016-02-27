@@ -343,6 +343,10 @@ li:hover {
 	flex-wrap: wrap;
 }
 
+.mod-l-cont {
+	width: 66.66%;
+}
+
 .col-1 {
 	width: 8.33%;
 }
@@ -415,25 +419,47 @@ li:hover {
 	.c-m-div {
 		width: 100%;
 	}
+
 	.b-bot:after {
 		display: none;
 	}
+
 	h3 {
 		font-size: 40px;
 	}
+
 	.h-title {
 		display: none;
 	}
+
 	.h-menu {
 		font-size: 16px;
 		width: 100%;
 		padding: 10px;
 		padding-bottom: 0;
 	}
+
 	.title {
 		margin-bottom: 0;
 	}
+
 	#header {
 
+	}
+
+	.modal-content {
+		height: 97vh;
+	}
+
+	.modal-body {
+		height: 70vh;
+	}
+
+	.mod-gallery {
+		display: none;
+	}
+
+	.mod-l-cont {
+		width: 100%;
 	}
 }

@@ -48,7 +48,7 @@
 						<li ng-click="buildCart()" data-toggle="modal" data-target="#cart">Cart<span class="glyphicon glyphicon-shopping-cart"></span></li>
 					</ul>
 				</div>
-				<div class="alert alert-warning construction" role="alert">Site currently under construction.</div>
+				<!--<div class="alert alert-warning construction" role="alert">Site currently under construction.</div> -->
 				<div class="col-12 title"><h1>Lowgami</h1><h2>Authentic Handmade Japanese Paper Crafts</h2></div>
 			</div>
 		</div>
@@ -86,7 +86,7 @@
 						<h3 class="modal-title" id="{{key}} Modal">{{key}}</h3>
 					</div>
 					<div class="modal-body dcont">
-						<div ng-repeat="(key, value) in value.inv" ng-show="isSet(key)" ng-init="buildList(key, value)" class="col-8 dcont rbord">
+						<div ng-repeat="(key, value) in value.inv" ng-show="isSet(key)" ng-init="buildList(key, value)" class="mod-l-cont dcont rbord">
 							<div class="col-5 mod-l-img"><img src="{{value.img}}" ng-srcset="{{value.img | srcset}}"></div>
 							<div class="col-7 mod-l-text">
 								<div class="col-12 mod-l-top">
