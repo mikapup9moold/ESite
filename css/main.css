@@ -461,5 +461,29 @@ li:hover {
 
 	.mod-l-cont {
 		width: 100%;
+		display: block;
+	}
+
+	.mod-l-img {
+		width: 50%;
+		margin-top: 0;
+		margin-bottom: 0;
+		vertical-align: middle;
+		height: 50%;
+	}
+
+	.mod-l-img img {
+		display: block;
+	}
+
+	.mod-l-text {
+		width: 100%;
+		margin: 0;
+		height: 50%;
+		padding-left: 10px;
+	}
+
+	h4 {
+		font-size: 20px;
 	}
 }
