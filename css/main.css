@@ -448,11 +448,11 @@ li:hover {
 	}
 
 	.modal-content {
-		height: 97vh;
+		//height: 97vh;
 	}
 
 	.modal-body {
-		height: 70vh;
+		//height: 70vh;
 	}
 
 	.mod-gallery {
@@ -487,7 +487,7 @@ li:hover {
 		font-size: 20px;
 	}
 
-	h3 {
+	h3.modal-title {
 		font-size: 8vw;
 	}
 
@@ -495,4 +495,20 @@ li:hover {
 		border: none;
 		padding: 0;
 	}
+
+	.btn {
+		width: 100%;
+	}
+
+	.wish-btn {
+		margin-bottom: 5px;
+	}
+
+	.cart-btn {
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
 }
