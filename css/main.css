@@ -395,6 +395,10 @@ li:hover {
 	width: 100%;
 }
 
+.mobile {
+	display: none;
+}
+
 @media screen and (max-width: 1217px) {
 	.b-right {
 		display: none;
@@ -416,6 +420,10 @@ li:hover {
 }
 
 @media screen and (max-width: 600px) {
+	.mobile {
+		display: block;
+	}
+
 	.c-m-div {
 		width: 100%;
 	}
@@ -510,13 +518,17 @@ li:hover {
 
 	.mob-btn {
 		position: absolute;
-		top: 25%;
+		top: 22%;
 		font-size: 30px;
-		background-color: orange;
+		background-color: gray;
+		border-radius: 10px;
+		padding: 5px;
+		padding-top: 9px;
+		padding-bottom: 10px;
 	}
 
 	.m-b-l {
-		margin-right: 20px;
+		margin-left: -40px;
 	}
 
 	.m-b-r {

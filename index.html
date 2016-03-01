@@ -88,11 +88,11 @@
 					<div class="modal-body dcont">
 						<div ng-repeat="(key, value) in value.inv" ng-show="isSet(key)" ng-init="buildList(key, value)" class="mod-l-cont dcont rbord">
 							<div class="col-5 mod-l-img dcont">
-								<div class="col-1"><span class="glyphicon glyphicon-chevron-left mob-btn m-b-l"></span></div>
+								<div class="col-1 mobile"><span class="glyphicon glyphicon-chevron-left mob-btn m-b-l"></span></div>
 								<div class="col-10">
 									<img src="{{value.img}}" ng-srcset="{{value.img | srcset}}">
 								</div>
-								<div class="col-1"><span class="glyphicon glyphicon-chevron-right mob-btn m-b-r"></span></div>
+								<div class="col-1 mobile"><span class="glyphicon glyphicon-chevron-right mob-btn m-b-r"></span></div>
 							</div>
 							<div class="col-7 mod-l-text">
 								<div class="col-12 mod-l-top">
