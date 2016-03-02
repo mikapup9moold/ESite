@@ -510,6 +510,7 @@ li:hover {
 
 	.wish-btn {
 		margin-bottom: 5px;
+		margin-top: 10px;
 	}
 
 	.cart-btn {
@@ -533,6 +534,11 @@ li:hover {
 
 	.m-b-r {
 		margin-left: 20px;
+	}
+
+	.mod-l-cont.ng-show-add-active,
+	.mod-l-cont.ng-show-remove-active {
+		transition: 1s linear all;
 	}
 }
 

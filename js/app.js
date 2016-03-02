@@ -4,18 +4,54 @@
 	app.controller('InventoryController', function($scope, $firebaseObject) {
 		var ref = new Firebase('https://blinding-heat-3195.firebaseio.com/menu');
 		var syncObject = $firebaseObject(ref);
-		syncObject.$bindTo($scope, "data");
+		syncObject.$bindTo($scope, "data")
+			.then(function() {
+				$scope.buildMobileList();
+			});
+/*		syncObject.$loaded()
+			.then(function(data) {
+				$scope.buildMobileList();
+			})
+			.catch(function(error) {
+				console.log('Error:', error);
+			}); */
 		$scope.itemList = {};
+		$scope.mobileToggleList = {};
 		$scope.current = false;
+
 		$scope.buildList = function(key, value) {
 			$scope.itemList[key] = value;
 		}
+
+		// Data structure is: {'Bangles' : ['B1Anime Girl', 'B1Kabukii Man'], 'Earrings' :[]}
+		$scope.buildMobileList = function() {
+			for(var category in $scope.data) {
+				if(category.charAt(0) !== '$') {
+					$scope.mobileToggleList[category] = Object.keys($scope.data[category].inv);
+				}
+			}
+		}
+
 		$scope.setCurrent = function(itemName) {
 			$scope.current = itemName;
 		};
+
 		$scope.isSet = function(itemName) {
 			return $scope.current === itemName;
 		};
+
+		$scope.mobileToggle = function(lr, parent, item) {
+			var list = $scope.mobileToggleList[parent];
+			var len = list.length;
+			var index;
+			for(i = 0; i < len; i++) {
+				if(list[i] == item) {
+					index = i;
+				}
+			}
+			$scope.setCurrent(list[index + lr]);				
+		}
+
 		$scope.range = function(num) {
 			var range = [];
 			num = parseInt(num);
@@ -24,6 +60,7 @@
 			}
 			return range;
 		};
+
 		//localStorage.cart = '';
 		//localStorage.wish = '';
 
