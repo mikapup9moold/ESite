@@ -420,6 +420,12 @@ li:hover {
 }
 
 @media screen and (max-width: 600px) {
+
+	body.modal-open {
+		overflow: hidden;
+		position: fixed;
+	}
+
 	.mobile {
 		display: block;
 	}
