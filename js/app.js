@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module('eStore', ['firebase']);
+	var app = angular.module('eStore', ['firebase', 'ngAnimate']);
 
 	app.controller('InventoryController', function($scope, $firebaseObject) {
 		var ref = new Firebase('https://blinding-heat-3195.firebaseio.com/menu');

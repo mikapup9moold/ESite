@@ -542,10 +542,6 @@ li:hover {
 		margin-left: 20px;
 	}
 
-	.mod-l-cont.ng-show-add-active,
-	.mod-l-cont.ng-show-remove-active {
-		transition: 1s linear all;
-	}
 }
 
 @media screen and (max-width: 400px) {
