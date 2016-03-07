@@ -34,6 +34,7 @@
 
 		$scope.setCurrent = function(itemName) {
 			$scope.current = itemName;
+			//$('.modal-body').css({transform: 'translate3d(0, 0, 0)'});
 		};
 
 		$scope.isSet = function(itemName) {

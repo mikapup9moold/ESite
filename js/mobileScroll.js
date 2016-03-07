@@ -30,8 +30,10 @@
 				}
 
 				scope.leftRight = function(direction) {
-					if($('.modal-body').css('transform') == 'none') {
+					if($('.modal-body').attr('style').split(':').length <= 2) {
 						$('.modal-body').css({transform: 'translate3d(0, 0, 0)'});
+					} else if($('.modal-body').css('transform') == 'none') {
+						$('.modal-bodu').css({transform: 'translate3d(0, 0, 0)'});
 					}
 					//var current = $('.modal-body').css('transform').split(', ');
 					var current = $('.modal-body').attr('style').split('translate3d(')[1].split('px, ')[0];
