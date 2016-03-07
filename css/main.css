@@ -463,6 +463,7 @@ li:hover {
 
 	.modal-content {
 		//height: 97vh;
+		overflow: hidden;
 	}
 
 	.modal-body {
@@ -540,6 +541,42 @@ li:hover {
 
 	.m-b-r {
 		margin-left: 20px;
+	}
+
+	.modal-body {
+		flex-wrap: nowrap;
+		//width: 500px;
+		right: 0;
+		transition: 1s right;
+	}
+
+	.mod-l-cont.ng-hide-add,
+	.mod-l-cont.ng-hide-remove {
+		//transition: 0s linear all;
+	}
+
+	.mod-l-cont.ng-hide-add-active,
+	.mod-l-cont.ng-hide-remove-active {
+		//transition: .5s ease-in-out all;
+		//transition-delay: .5s;
+	}
+
+	.mod-l-cont.ng-hide-add-active {
+
+	}
+
+	.mod-l-cont.ng-hide {
+		//transform: translate(300px, 300px);
+		//opacity: 0;
+	}
+
+	.dsktp {
+		display: none;
+	}
+
+	.position {
+		right: 0;
+		transition: 1s right;
 	}
 
 }

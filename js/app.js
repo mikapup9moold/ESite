@@ -49,7 +49,8 @@
 					index = i;
 				}
 			}
-			$scope.setCurrent(list[index + lr]);				
+			$scope.setCurrent(list[index + lr]);
+
 		}
 
 		$scope.range = function(num) {
