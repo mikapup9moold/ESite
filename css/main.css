@@ -546,8 +546,8 @@ li:hover {
 	.modal-body {
 		flex-wrap: nowrap;
 		//width: 500px;
-		right: 0;
-		transition: 1s right;
+		transform: translate3d(0, 0, 0);
+		transition: .5s ease-in-out all;
 	}
 
 	.mod-l-cont.ng-hide-add,

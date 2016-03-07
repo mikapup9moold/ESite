@@ -30,15 +30,16 @@
 				}
 
 				scope.leftRight = function(direction) {
-					var current = $('.modal-body').css('right').split('px');
-					var current = Number(current[0]);
+					var current = $('.modal-body').css('transform').split(', ');
+					var current = Number(current[4]);
 					var multiplier = 0;
 					if(direction == 'right') {
-						multiplier = 1;
-					} else {
 						multiplier = -1;
+					} else {
+						multiplier = 1;
 					}
-					$('.modal-body').css('right', current + (multiplier * (newVal.w - 52)) + 'px');					
+					var str = 'translate3d(' + (current + (multiplier * (newVal.w - 52))) + 'px, 0, 0)';
+					$('.modal-body').css({transform: str});					
 				}
 
 			}, true);
