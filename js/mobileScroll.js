@@ -13,9 +13,14 @@
 				scope.windowWidth = newVal.w;
 				scope.newWidth = function() {
 					return {
-						'width' : (newVal.w * 8) + 'px'
+						'width' : (newVal.w * 9) + 'px'
 					};
 				};
+				scope.singleWidth = function() {
+					return {
+						'width' : (newVal.w - 52) + 'px'
+					}
+				}
 				scope.right = function() {
 					scope.leftRight('right');
 				}
@@ -33,7 +38,7 @@
 					} else {
 						multiplier = -1;
 					}
-					$('.modal-body').css('right', current + (multiplier * 362) + 'px');					
+					$('.modal-body').css('right', current + (multiplier * (newVal.w - 52)) + 'px');					
 				}
 
 			}, true);
