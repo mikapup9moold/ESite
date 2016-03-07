@@ -423,7 +423,8 @@ li:hover {
 
 	body.modal-open {
 		overflow: hidden;
-		position: fixed;
+		//position: fixed;
+		//this position value works for IE, but makes chrome browser scroll to top of page when clicking modal
 	}
 
 	.mobile {
