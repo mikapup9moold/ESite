@@ -38,6 +38,9 @@
 		};
 
 		$scope.isSet = function(itemName) {
+			if($(window).width() < 601) {
+				return true;
+			}
 			return $scope.current === itemName;
 		};
 

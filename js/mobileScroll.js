@@ -12,14 +12,19 @@
 				scope.windowHeight = newVal.h;
 				scope.windowWidth = newVal.w;
 				scope.newWidth = function() {
-					return {
-						'width' : (newVal.w * 9) + 'px'
-					};
+					if(scope.windowWidth < 601) {
+						return {
+							'width' : (newVal.w * 9) + 'px'
+						};
+					}
 				};
 				scope.singleWidth = function() {
-					return {
-						'width' : (newVal.w - 52) + 'px'
+					if(scope.windowWidth < 601) {
+						return {
+							'width' : (newVal.w - 52) + 'px'
+						};
 					}
+
 				}
 				scope.right = function() {
 					scope.leftRight('right');
