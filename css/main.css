@@ -542,15 +542,17 @@ li:hover {
 		padding: 5px;
 		padding-top: 9px;
 		padding-bottom: 10px;
+		transform: translate3d(0, 0, 0);
+		transition: .5s ease-in-out all;
 	}
 
 	.m-b-l {
-		margin-left: -40px;
+		//margin-left: -40px;
 	}
 
 	.m-b-r {
-		margin-left: 20px;
-		//margin-left: 280px;
+		//margin-left: 20px;
+		margin-left: 280px;
 	}
 
 	.modal-body {

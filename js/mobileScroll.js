@@ -26,7 +26,13 @@
 							'width' : (newVal.w - 52) + 'px'
 						};
 					}
-
+				}
+				scope.rightButton = function() {
+					if(scope.windowWidth < 601) {
+						return{
+							'margin-left' : (scope.windowWidth - 52 - 41) + 'px'
+						}
+					}
 				}
 				scope.right = function() {
 					scope.leftRight('right');
@@ -53,7 +59,9 @@
 						multiplier = 1;
 					}
 					var str = 'translate3d(' + (current + (multiplier * (newVal.w - 52))) + 'px, 0, 0)';
-					$('.modal-body').css({transform: str});					
+					var btn = 'translate3d(' + -(current + (multiplier * (newVal.w - 52))) + 'px, 0, 0)';
+					$('.modal-body').css({transform: str});
+					$('.mob-btn').css({transform: btn});
 				}
 
 			}, true);
