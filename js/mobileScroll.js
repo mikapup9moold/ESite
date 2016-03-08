@@ -13,8 +13,10 @@
 				scope.windowWidth = newVal.w;
 				scope.newWidth = function() {
 					if(scope.windowWidth < 601) {
+						scope.scrollWidth = newVal.w * 9;
+						scope.scrollOffset = 52 * (9 - 1);
 						return {
-							'width' : (newVal.w * 9) + 'px'
+							'width' : scope.scrollWidth + 'px'
 						};
 					}
 				};
@@ -44,9 +46,10 @@
 					var current = $('.modal-body').attr('style').split('translate3d(')[1].split('px, ')[0];
 					var current = Number(current);
 					var multiplier = 0;
-					if(direction == 'right') {
+					var rightEdge = -(scope.scrollWidth - scope.windowWidth - scope.scrollOffset);
+					if(direction == 'right' && current > rightEdge) {
 						multiplier = -1;
-					} else {
+					} else if(direction == 'left' && current < 0) {
 						multiplier = 1;
 					}
 					var str = 'translate3d(' + (current + (multiplier * (newVal.w - 52))) + 'px, 0, 0)';
