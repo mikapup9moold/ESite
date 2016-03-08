@@ -271,11 +271,11 @@ li:hover {
 }
 
 .mod-l-top {
-	//height: 85%;
+	height: 85%;
 }
 
 .mod-l-bot {
-	//height: 15%;
+	height: 15%;
 }
 
 .mod-blurb {
@@ -478,6 +478,14 @@ li:hover {
 	.mod-l-cont {
 		width: 100%;
 		display: block;
+	}
+
+	.mod-l-top {
+		height: auto;
+	}
+
+	.mod-l-bot {
+		height: auto;
 	}
 
 	.mod-l-img {
