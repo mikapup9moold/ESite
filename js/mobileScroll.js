@@ -8,6 +8,7 @@
 				$('.mob-btn').css({transform : 'translate3d(0, 0, 0)'});
 			});
 			var win = angular.element($window);
+			var amount = 3;
 			scope.$watch(function() {
 				return {
 					'w' : win.width(),
@@ -18,8 +19,8 @@
 				scope.windowWidth = newVal.w;
 				scope.newWidth = function() {
 					if(scope.windowWidth < 601) {
-						scope.scrollWidth = newVal.w * 9;
-						scope.scrollOffset = 52 * (9 - 1);
+						scope.scrollWidth = newVal.w * amount;
+						scope.scrollOffset = 52 * (amount - 1);
 						return {
 							'width' : scope.scrollWidth + 'px'
 						};

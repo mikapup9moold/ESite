@@ -1,0 +1,382 @@
+{
+  "menu" : {
+    "Bangles" : {
+      "bot" : 1,
+      "edge" : 1,
+      "first" : "B1Anime Girl",
+      "img" : "img/agirl.jpg",
+      "inv" : {
+        "B1Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "B1Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "B1Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "B2Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "B2Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "B2Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "BAnime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "BKabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "BKimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        }
+      },
+      "modal" : "bangsModal"
+    },
+    "Earrings" : {
+      "bot" : 1,
+      "edge" : 1,
+      "first" : "E1Anime Girl",
+      "img" : "img/kimonog.jpg",
+      "inv" : {
+        "E1Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "E1Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "E1Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "E2Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "E2Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "E2Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "EAnime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "EKabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "EKimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        }
+      },
+      "modal" : "earsModal"
+    },
+    "Greeting Cards" : {
+      "bot" : 1,
+      "edge" : 0,
+      "first" : "G1Anime Girl",
+      "img" : "img/kabukii.jpg",
+      "inv" : {
+        "G1Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "G1Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "G1Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "G2Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "G2Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "G2Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "GAnime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "GKabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "GKimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        }
+      },
+      "modal" : "gcardModal"
+    },
+    "Ornaments" : {
+      "bot" : 0,
+      "edge" : 1,
+      "first" : "O1Anime Girl",
+      "img" : "img/kabukii.jpg",
+      "inv" : {
+        "O1Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "O1Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "O1Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "O2Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "O2Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "O2Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "OAnime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "OKabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "OKimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        }
+      },
+      "modal" : "ornaModal"
+    },
+    "Pictures" : {
+      "bot" : 0,
+      "edge" : 1,
+      "first" : "P1Anime Girl",
+      "img" : "img/agirl.jpg",
+      "inv" : {
+        "P1Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "P1Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "P1Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "P2Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "P2Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "P2Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "PAnime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "PKabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "PKimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        }
+      },
+      "modal" : "pictModal"
+    },
+    "Prints" : {
+      "bot" : 0,
+      "edge" : 0,
+      "first" : "1Anime Girl",
+      "img" : "img/kimonog.jpg",
+      "inv" : {
+        "1Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "1Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "1Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "2Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "2Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "2Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "Anime Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/agirl.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "Kabukii Man" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kabukii.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        },
+        "Kimono Girl" : {
+          "blurb" : "Lorem ipsum dolor sit amet, ius atqui delenit disputationi ad. Usu vide assum oblique ne, in consul verear vim. Malorum elaboraret no duo, sea erat congue vivendo at. Eam id paulo ubique causae, no mei nulla possim.",
+          "img" : "img/kimonog.jpg",
+          "price" : 4.99,
+          "qty" : "30"
+        }
+      },
+      "modal" : "printsModal"
+    }
+  }
+}
