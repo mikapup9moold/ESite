@@ -50,22 +50,23 @@
 						<li ng-click="buildCart()" data-toggle="modal" data-target="#cart">Cart<span class="glyphicon glyphicon-shopping-cart"></span></li>
 					</ul>
 				</div>
-				<div class="alert alert-warning construction" role="alert">Site currently under construction.</div>
+				<!--<div class="alert alert-warning construction" role="alert">Site currently under construction.</div> -->
 				<div class="col-12 title"><h1>Lowgami</h1><h2>Authentic Handmade Japanese Paper Crafts</h2></div>
 			</div>
 		</div>
 
 		<div id="mission" class="dcont">
-			<div class="col-6">
+			<div class="col-6 mobile-blurb">
 				<div class="col-12 c"><h1 class="m-title-g">Experience</h1><h2 class="m-title-b">Handmade Beauty</h2><h2 class="dash">'</h2></div>
 				<div class="col-12 c"><p class="m-blurb">Each and every design is inspired by Japanese culture and skillfully crafted using precious Yuzen-Washi paper.</p></div>
 				<div class="col-12 c link">MY STORY</div>
 			</div>
-			<div class="col-6 m-image"><img src="img/bangle.jpg"></div>
+			<div class="col-6 m-image dsktp"><img src="img/bangle.jpg"></div>
 		</div>
 
 		<div class="collection dcont">
-			<div class="col-12" id="parallaxContainer"><img class="c-image" src="img/collection_title.jpg"></div>
+			<div class="col-12 dsktp" id="parallaxContainer"><img class="c-image" src="img/collection_title.jpg"></div>
+			<div class="col-12 mobile"><img class="c-image" src="img/collection_title_mobile.jpg"></div>
 			<div class="col-12 c-menu dcont">
 				<div ng-repeat="(key, value) in data" ng-click="setCurrent(value.first)" class="col-3 c-m-div c ng-class:{'b-bot' : value.bot}" data-toggle="modal" data-target="#{{value.modal}}">
 					<div class="ng-class:{'b-right' : value.edge}"></div>

@@ -431,6 +431,10 @@ li:hover {
 		display: block;
 	}
 
+	.mobile-blurb {
+		width: 100%;
+	}
+
 	.c-m-div {
 		width: 100%;
 	}
@@ -601,6 +605,40 @@ li:hover {
 	.rbord {
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+
+	.m-title-g {
+		font-size: 15vw;
+	}
+
+	.m-title-b {
+		font-size: 10vw;
+	}
+
+	.dash {
+		font-size: 30px;
+	}
+
+	.m-blurb {
+		margin-right: 10%;
+		margin-left: 10%;
+		font-size: 18px;
+	}
+
+	.link {
+		font-size: 20px;
+	}
+
+	#header {
+		height: 650px;
+	}
+
+	h1 {
+		font-size: 18vw;
+	}
+
+	h2 {
+		font-size: 5vw;
 	}
 
 }
