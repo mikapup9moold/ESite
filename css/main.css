@@ -562,6 +562,13 @@ li:hover {
 		transition: .5s ease-in-out all;
 	}
 
+	.mob-btn, .modal-body {
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+		backface-visibility: hidden;
+		perspective: 1000;
+	}
+
 	.mod-l-cont.ng-hide-add,
 	.mod-l-cont.ng-hide-remove {
 		//transition: 0s linear all;
