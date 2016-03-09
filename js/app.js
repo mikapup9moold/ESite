@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module('eStore', ['firebase', 'ngAnimate']);
+	var app = angular.module('eStore', ['firebase', 'ngAnimate', 'mobScroll.directive']);
 
 	app.controller('InventoryController', function($scope, $firebaseObject) {
 		var ref = new Firebase('https://blinding-heat-3195.firebaseio.com/menu');
@@ -143,6 +143,8 @@
 		}
 
 		$scope.swapModal = function(mod1, mod2) {
+			$('.modal-body').css({transform : 'translate3d(0, 0, 0)'});
+			$('.mob-btn').css({transform : 'translate3d(0, 0, 0)'});
 			$("#" + mod1).on('hidden.bs.modal', function(e) {
 				$("#" + mod2).modal('show');
 				$("#" + mod1).off();

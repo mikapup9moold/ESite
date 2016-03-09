@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module('eStore');
+	var app = angular.module('mobScroll.directive', []);
 	app.directive('mobileScroll', function($window) {
 		return function(scope, elem, attr) {
 			// Reset the position of the modal body after browsing is done.
