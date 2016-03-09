@@ -8,7 +8,7 @@
 				$('.mob-btn').css({transform : 'translate3d(0, 0, 0)'});
 			});
 			var win = angular.element($window);
-			var amount = 3;
+			var amount = 9;
 			scope.$watch(function() {
 				return {
 					'w' : win.width(),
