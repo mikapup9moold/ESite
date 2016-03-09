@@ -2,6 +2,11 @@
 	var app = angular.module('eStore');
 	app.directive('mobileScroll', function($window) {
 		return function(scope, elem, attr) {
+			// Reset the position of the modal body after browsing is done.
+			$('.modal').bind('show.bs.modal', function(e) {
+				$('.modal-body').css({transform : 'translate3d(0, 0, 0)'});
+				$('.mob-btn').css({transform : 'translate3d(0, 0, 0)'});
+			});
 			var win = angular.element($window);
 			scope.$watch(function() {
 				return {
@@ -61,6 +66,7 @@
 					var str = 'translate3d(' + (current + (multiplier * (newVal.w - 52))) + 'px, 0, 0)';
 					var btn = 'translate3d(' + -(current + (multiplier * (newVal.w - 52))) + 'px, 0, 0)';
 					$('.modal-body').css({transform: str});
+					// needed to use the translate3d and if only want 1 set of buttons to stay stationary
 					$('.mob-btn').css({transform: btn});
 				}
 
