@@ -19,6 +19,10 @@
 		$scope.mobileToggleList = {};
 		$scope.current = false;
 
+		$(document).ready(function() {
+			$('.title').css('margin-top', ($(window).width() * .445364) - 32 - 97);
+		});
+
 		$scope.buildList = function(key, value) {
 			$scope.itemList[key] = value;
 		}

@@ -75,7 +75,6 @@
 			win.bind('mobileScroll', function() {
 				scope.$apply();
 			});
-
 		}
 	});
 })();

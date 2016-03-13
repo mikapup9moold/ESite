@@ -152,7 +152,7 @@ li:hover {
 }
 
 #mission {
-	margin-top: calc(-350px + 25vw);
+	margin-top: calc(-350px + 15vw);
 }
 
 .m-title-g {
@@ -399,6 +399,10 @@ li:hover {
 	display: none;
 }
 
+.mobile-menu {
+	display: none;
+}
+
 @media screen and (max-width: 1217px) {
 	.b-right {
 		display: none;
@@ -634,11 +638,13 @@ li:hover {
 	}
 
 	h1 {
-		font-size: 18vw;
+		//font-size: 18vw;
+		font-size: 70px;
 	}
 
 	h2 {
-		font-size: 5vw;
+		//font-size: 5vw;
+		font-size: 18px;
 	}
 
 	#header {
@@ -654,6 +660,13 @@ li:hover {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
+	.h-menu ul {
+		display: none;
+	}
+
+	.mobile-menu {
+		display: inherit;
+	}
 
 }
