@@ -152,7 +152,7 @@ li:hover {
 }
 
 #mission {
-	margin-top: calc(-350px + 15vw);
+	margin-top: calc(-350px + 25vw);
 }
 
 .m-title-g {
@@ -424,6 +424,10 @@ li:hover {
 }
 
 @media screen and (max-width: 600px) {
+
+	#mission {
+		margin-top: calc(-350px + 15vw);
+	}
 
 	body.modal-open {
 		overflow: hidden;
