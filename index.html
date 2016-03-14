@@ -180,7 +180,7 @@
 									<form>
 										<label>{{itemList[key].price | currency}}: 
 											<input type="number" name="input" ng-model="value.num" min="0" max="99" required>
-											<input type="submit" value="Update Cart" ng-click="setAmount(key, value.num, 'cart'); buildCart()">
+											<input type="submit" value="Update" ng-click="setAmount(key, value.num, 'cart'); buildCart()">
 										</label>
 									</form>
 									<br><br><span ng-click="setAmount(key, 0, 'cart'); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
