@@ -26,6 +26,8 @@
 						};
 					}
 				};
+
+				// Sets the width of a single item.
 				scope.singleWidth = function() {
 					if(scope.windowWidth < 601) {
 						return {
@@ -33,6 +35,8 @@
 						};
 					}
 				}
+
+				// Currently obsolete function that will be removed in future implementations.
 				scope.rightButton = function() {
 					if(scope.windowWidth < 601) {
 						return{
@@ -40,14 +44,19 @@
 						}
 					}
 				}
+
+				// Moves item collection left when right button is pressed.
 				scope.right = function() {
 					scope.leftRight('right');
 				}
 
+				// Moves item collection right when left button is pressed.
 				scope.left = function() {
 					scope.leftRight('left');
 				}
 
+				// Allows for left/right movement of item collection.
+				// Accounts for edge cases where no more items remain in said direction.
 				scope.leftRight = function(direction) {
 					if($('.modal-body').attr('style').split(':').length <= 2) {
 						$('.modal-body').css({transform: 'translate3d(0, 0, 0)'});

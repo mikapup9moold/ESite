@@ -19,6 +19,7 @@
 		$scope.mobileToggleList = {};
 		$scope.current = false;
 
+		// Set transparent banner height for mobile devices
 		$(document).ready(function() {
 			var width = $(window).width();
 			if(width <= 600) {
@@ -26,10 +27,13 @@
 			}
 		});
 
+		// Constructs local reference to all the available items for sale.
+		// Acts as a key/value pair for referencing items by their unique name.
 		$scope.buildList = function(key, value) {
 			$scope.itemList[key] = value;
 		}
 
+		// Constructs local reference for the available items for the mobile implementation.
 		// Data structure is: {'Bangles' : ['B1Anime Girl', 'B1Kabukii Man'], 'Earrings' :[]}
 		$scope.buildMobileList = function() {
 			for(var category in $scope.data) {
@@ -39,11 +43,13 @@
 			}
 		}
 
+		// Sets the current item that is viewed by the user.
 		$scope.setCurrent = function(itemName) {
 			$scope.current = itemName;
 			//$('.modal-body').css({transform: 'translate3d(0, 0, 0)'});
 		};
 
+		// Boolean check for if an item should be displayed.
 		$scope.isSet = function(itemName) {
 			if($(window).width() < 601) {
 				return true;
@@ -51,6 +57,7 @@
 			return $scope.current === itemName;
 		};
 
+		// Toggles left/right scroll for mobile implementation of available items.
 		$scope.mobileToggle = function(lr, parent, item) {
 			var list = $scope.mobileToggleList[parent];
 			var len = list.length;
@@ -64,6 +71,7 @@
 
 		}
 
+		// Builds numbered index for a given range. (currently obsolete and unused in implemenation)
 		$scope.range = function(num) {
 			var range = [];
 			num = parseInt(num);
@@ -76,6 +84,7 @@
 		//localStorage.cart = '';
 		//localStorage.wish = '';
 
+		// Adds a cart/wishlist item to the localStorage variable.
 		$scope.addTo = function(item, list) {
 			checkLists();
 			var id = item.replace(/\s+/g, '') + 'Qty';
@@ -87,6 +96,7 @@
 			}
 		};
 
+		// Moves a cart/wishlist item from one list to another in localStorage.
 		$scope.moveTo = function(item, amount, list) {
 			localStorage[list] += (item + '#' + amount + ',');
 			if(list == 'cart') {
@@ -97,6 +107,7 @@
 			}
 		}
 
+		// Builds scope reference of all items placed in cart/wishlist
 		function buildHTML(list) {
 			var obj = {};
 			var total = 0;
@@ -110,6 +121,8 @@
 			return obj;
 		}
 
+		// Verifies that there is a localVariable for the cart/wishlist before other functions begin to store data there.
+		// This is done to aviod the writing of 'undefined' to the cart/wishlist in localStorage.
 		function checkLists() {
 			if(typeof localStorage.cart === 'undefined') {
 				localStorage.cart = '';
@@ -119,6 +132,7 @@
 			}
 		}
 
+		// Implements the cart/wishlist from localStorage string.
 		$scope.buildCart = function() {
 			// Initialize localStorage of cart and wishlist if they dont exist.
 			checkLists();
@@ -126,12 +140,16 @@
 			$scope.copied.cart = false;
 			$scope.copied.wish = false;
 
+			// Grab localStorage string and parse into workable format
 			$scope.cart = toJSON(localStorage.cart);
 			$scope.wish = toJSON(localStorage.wish);
+
+			// Parse workable format further into referencable objects
 			$scope.cartCat = buildHTML($scope.cart);
 			$scope.wishCat = buildHTML($scope.wish);
 		};
 
+		// Set custom amount of items within cart/wishlist
 		$scope.setAmount = function(key, x, type) {
 			$('.fout').fadeOut("fast");
 			var catalog = type + 'Cat';
@@ -149,21 +167,31 @@
 			$('.fout').fadeIn("slow");
 		}
 
+		// Provides smooth transition from one modal to the other.
 		$scope.swapModal = function(mod1, mod2) {
+			// Reset the position of the mobile scrolling.
 			$('.modal-body').css({transform : 'translate3d(0, 0, 0)'});
 			$('.mob-btn').css({transform : 'translate3d(0, 0, 0)'});
+
+			// Event listener necessary for smooth transition with Bootstrap's modals
 			$("#" + mod1).on('hidden.bs.modal', function(e) {
 				$("#" + mod2).modal('show');
 				$("#" + mod1).off();
 			});
 			$("#" + mod1).modal('hide');
 		}
+
+		// Initialize the status of the 'Copy All to' button
 		$scope.copied = {'cart' : false, 'wish' : false};
+
+		// Copies one list to another.
 		$scope.copyAll = function(list1, list2) {
 			localStorage[list2] += localStorage[list1];
 			$scope.copied[list1] = true;
 		}
 
+		// Deletes all items from specific list.
+		// Also includes possibility of including an undo button.
 		$scope.deleteAll = function(list) {
 			var undo = 'undo' + list;
 			localStorage[undo] = localStorage[list];
@@ -172,6 +200,7 @@
 
 	});
 
+	// Allows for easy string manipulation within DOM for naming IDs
 	app.filter('deleteSpaces', function() {
 		return function(str) {
 			if(!angular.isString(str)) {
@@ -181,6 +210,7 @@
 		}
 	});
 
+	// Allows for easy implementation of srcset for any image.
 	app.filter('srcset', function() {
 		return function(str) {
 			if(!angular.isString(str)) {
