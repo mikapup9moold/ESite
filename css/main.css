@@ -423,6 +423,16 @@ li:hover {
 	}
 }
 
+@media screen and (max-width: 1000px) {
+	.mod-gallery-img {
+		width: 43%;
+	}
+
+	.mgi-bord {
+		width: 44%;
+	}
+}
+
 @media screen and (max-width: 600px) {
 
 	#mission {
