@@ -441,7 +441,29 @@ li:hover {
 		margin-bottom: 20px;
 	}
 
+	.btn {
+		width: 100%;
+	}
 
+	.wish-btn {
+		margin-bottom: 10px;
+	}
+	
+	.mod-l-text {
+		height: 350px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	.mod-gallery {
+		height: 390px;
+	}
+
+	.mod-gallery-in {
+		height: 372px;
+	}
 }
 
 @media screen and (max-width: 600px) {
