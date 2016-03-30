@@ -156,7 +156,7 @@
 								<td>
 									<form>
 										<label>{{itemList[key].price | currency}}: 
-											<input type="number" name="input" ng-model="value.num" min="0" max="99" required>
+											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="buildCart()" ng-blur="buildCart()">
 											<input type="submit" value="Update Cart" ng-click="setAmount(key, value.num, 'cart'); buildCart()">
 										</label>
 									</form>
@@ -179,7 +179,7 @@
 								<td colspan="2"><h5>{{key}}</h5><br>
 									<form>
 										<label>{{itemList[key].price | currency}}: 
-											<input type="number" name="input" ng-model="value.num" min="0" max="99" required>
+											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="buildCart()" ng-blur="buildCart()">
 											<input type="submit" value="Update" ng-click="setAmount(key, value.num, 'cart'); buildCart()">
 										</label>
 									</form>
@@ -230,7 +230,7 @@
 								<td>
 									<form>
 										<label>{{itemList[key].price | currency}}: 
-											<input type="number" name="input" ng-model="value.num" min="0" max="99" required>
+											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="buildCart()" ng-blur="buildCart()">
 											<input type="submit" value="Update List" ng-click="setAmount(key, value.num, 'wish'); buildCart()">
 										</label>
 									</form>
@@ -256,7 +256,7 @@
 								<td colspan="2"><h5>{{key}}</h5><br>
 									<form>
 										<label>{{itemList[key].price | currency}}: 
-											<input type="number" name="input" ng-model="value.num" min="0" max="99" required>
+											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="buildCart()" ng-blur="buildCart()">
 											<input type="submit" value="Update" ng-click="setAmount(key, value.num, 'wish'); buildCart()">
 										</label>
 									</form>
