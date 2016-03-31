@@ -254,6 +254,11 @@ li:hover {
 	z-index: -1;
 }
 
+.btn:active {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
 .modal-content {
 	text-align: left;
 	color: black;
