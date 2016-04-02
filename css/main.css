@@ -50,6 +50,14 @@ table {
 	table-layout: fixed;
 }
 
+.glyphicon-shopping-cart {
+	transition: 1s ease-in-out all;
+}
+
+.glyphicon-list {
+	transition: 1s ease-in-out all;
+}
+
 .cartImg {
 	width: 100px;
 }

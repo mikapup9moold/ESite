@@ -87,6 +87,17 @@
 		// Adds a cart/wishlist item to the localStorage variable.
 		$scope.addTo = function(item, list) {
 			checkLists();
+			if(list == 'wish') {
+				$('.glyphicon-list').css({
+					'opacity' : '1',
+					'color' : '#0DC1F1FF'
+				});
+			} else if (list == 'cart') {
+				$('.glyphicon-shopping-cart').css({
+					'opacity' : '1',
+					'color' : '#66CF2FFF'
+				});
+			}
 			var id = item.replace(/\s+/g, '') + 'Qty';
 			var num = $('#' + id + ' :selected').val();
 			if(typeof(Storage) !== 'undefined') {
