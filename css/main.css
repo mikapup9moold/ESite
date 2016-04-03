@@ -331,16 +331,24 @@ li:hover {
 	color: green;
 }
 
-.wlist {
-	transition: 1s ease-in-out all;
-	color: black;
+
+.top-menu {
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 1;
 	opacity: .2;
+	float: right;
+	transition: 1s ease-in-out all;
+}
+
+.wlist {
+	opacity : 1;
+	color : #0DC1F1;
 }
 
 .scart {
-	transition: 1s ease-in-out all;
-	color: black;
-	opacity: .2;
+	opacity : 1;
+	color : #66CF2F;
 }
 
 .rbord {
