@@ -50,14 +50,6 @@ table {
 	table-layout: fixed;
 }
 
-.glyphicon-shopping-cart {
-	transition: 1s ease-in-out all;
-}
-
-.glyphicon-list {
-	transition: 1s ease-in-out all;
-}
-
 .cartImg {
 	width: 100px;
 }
@@ -337,6 +329,18 @@ li:hover {
 
 .green {
 	color: green;
+}
+
+.wlist {
+	transition: 1s ease-in-out all;
+	color: black;
+	opacity: .2;
+}
+
+.scart {
+	transition: 1s ease-in-out all;
+	color: black;
+	opacity: .2;
 }
 
 .rbord {

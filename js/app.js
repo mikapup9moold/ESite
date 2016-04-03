@@ -88,12 +88,12 @@
 		$scope.addTo = function(item, list) {
 			checkLists();
 			if(list == 'wish') {
-				$('.glyphicon-list').css({
+				$('.wlist').css({
 					'opacity' : '1',
 					'color' : '#0DC1F1FF'
 				});
 			} else if (list == 'cart') {
-				$('.glyphicon-shopping-cart').css({
+				$('.scart').css({
 					'opacity' : '1',
 					'color' : '#66CF2FFF'
 				});

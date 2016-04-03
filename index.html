@@ -47,7 +47,7 @@
 						<li>Register</li>
 						<li>Sign In</li>
 						<li ng-click="buildCart()" data-toggle="modal" data-target="#wishList">Wish List</li>
-						<li ng-click="buildCart()" data-toggle="modal" data-target="#cart">Cart<span class="glyphicon glyphicon-shopping-cart"></span></li>
+						<li ng-click="buildCart()" data-toggle="modal" data-target="#cart">Cart<span class="glyphicon glyphicon-shopping-cart scart"></span></li>
 					</ul>
 					<div class="col-12 mobile-menu"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
 				</div>
@@ -85,8 +85,8 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<span ng-click="buildCart(); swapModal(value.modal, 'cart')" class="glyphicon glyphicon-shopping-cart close mod-list-btn" title="Shopping Cart"></span>
-						<span ng-click="buildCart(); swapModal(value.modal, 'wishList')" class="glyphicon glyphicon-list close mod-list-btn" title="Wish List"></span>
+						<span ng-click="buildCart(); swapModal(value.modal, 'cart')" class="glyphicon glyphicon-shopping-cart scart close mod-list-btn" title="Shopping Cart"></span>
+						<span ng-click="buildCart(); swapModal(value.modal, 'wishList')" class="glyphicon glyphicon-list wlist close mod-list-btn" title="Wish List"></span>
 						<h3 class="modal-title" id="{{key}} Modal">{{key}}</h3>
 					</div>
 					<div class="modal-body dcont" ng-style="newWidth()" mobile-scroll>
@@ -114,8 +114,8 @@
 									</div>
 								</div>
 								<div class="col-12 mod-l-bot">
-									<button ng-click="addTo(key, 'wish')" type="button" class="btn btn-info wish-btn"><span class="glyphicon glyphicon-list"></span><span class="mod-btn">Add to Wishlist</span></button>
-									<button ng-click="addTo(key, 'cart')" type="button" class="btn btn-success pull-right cart-btn"><span class="glyphicon glyphicon-shopping-cart"></span><span class="mod-btn">Add to Cart</span></button>
+									<button ng-click="addTo(key, 'wish')" type="button" class="btn btn-info wish-btn"><span class="glyphicon glyphicon-list wlist"></span><span class="mod-btn">Add to Wishlist</span></button>
+									<button ng-click="addTo(key, 'cart')" type="button" class="btn btn-success pull-right cart-btn"><span class="glyphicon glyphicon-shopping-cart scart"></span><span class="mod-btn">Add to Cart</span></button>
 								</div>
 							</div>
 						</div>
@@ -140,8 +140,8 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<span ng-click="buildCart()" class="glyphicon glyphicon-shopping-cart close mod-list-btn" title="Shopping Cart"></span>
-						<span ng-click="buildCart(); swapModal('cart', 'wishList')" class="glyphicon glyphicon-list close mod-list-btn" title="Wish List"></span>
+						<span ng-click="buildCart()" class="glyphicon glyphicon-shopping-cart scart close mod-list-btn" title="Shopping Cart"></span>
+						<span ng-click="buildCart(); swapModal('cart', 'wishList')" class="glyphicon glyphicon-list wlist close mod-list-btn" title="Wish List"></span>
 						<h3 class="modal-title" id="sCart">Shopping Cart</h3>
 					</div>
 					<div class="modal-body dcont">
@@ -214,8 +214,8 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<span ng-click="buildCart(); swapModal('wishList', 'cart')" class="glyphicon glyphicon-shopping-cart close mod-list-btn" title="Shopping Cart"></span>
-						<span ng-click="buildCart();" class="glyphicon glyphicon-list close mod-list-btn" title="Wish List"></span>
+						<span ng-click="buildCart(); swapModal('wishList', 'cart')" class="glyphicon glyphicon-shopping-cart scart close mod-list-btn" title="Shopping Cart"></span>
+						<span ng-click="buildCart();" class="glyphicon glyphicon-list wlist close mod-list-btn" title="Wish List"></span>
 						<h3 class="modal-title" id="wList">Wish List</h3>
 					</div>
 					<div class="modal-body dcont">
