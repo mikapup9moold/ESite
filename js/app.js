@@ -90,7 +90,8 @@
 			if(list == 'wish') {
 				$('.glyphicon-list').addClass('wlist');
 			} else if (list == 'cart') {
-				$('.glyphicon-shopping-cart').addClass('scart');
+				$('.mod-list-btn.glyphicon-shopping-cart').addClass('scart');
+				$('.scart').animate({fontSize: '24px'}, 500);
 			}
 			var id = item.replace(/\s+/g, '') + 'Qty';
 			var num = $('#' + id + ' :selected').val();
