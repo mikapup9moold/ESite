@@ -18,6 +18,7 @@
 		$scope.itemList = {};
 		$scope.mobileToggleList = {};
 		$scope.current = false;
+		$scope.category = false;
 
 		// Set transparent banner height for mobile devices
 		$(document).ready(function() {
@@ -45,7 +46,9 @@
 
 		// Sets the current item that is viewed by the user.
 		$scope.setCurrent = function() {
-			if(!$scope.current) {
+			// Check to see if opening a modal or selecting an item
+			if(this.value.modal) {
+				$scope.category = this.key;
 				$scope.current = this.value.first;
 			} else {
 				$scope.current = this.key;
