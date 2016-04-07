@@ -44,8 +44,12 @@
 		}
 
 		// Sets the current item that is viewed by the user.
-		$scope.setCurrent = function(itemName) {
-			$scope.current = itemName;
+		$scope.setCurrent = function() {
+			if(!$scope.current) {
+				$scope.current = this.value.first;
+			} else {
+				$scope.current = this.key;
+			}
 			//$('.modal-body').css({transform: 'translate3d(0, 0, 0)'});
 		};
 

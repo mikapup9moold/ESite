@@ -69,7 +69,7 @@
 			<div class="col-12 dsktp" id="parallaxContainer"><img class="c-image" src="img/collection_title.jpg"></div>
 			<div class="col-12 mobile"><img class="c-image" src="img/collection_title_mobile.jpg"></div>
 			<div class="col-12 c-menu dcont">
-				<div ng-repeat="(key, value) in data" ng-click="setCurrent(value.first)" class="col-3 c-m-div c ng-class:{'b-bot' : value.bot}" data-toggle="modal" data-target="#{{value.modal}}">
+				<div ng-repeat="(key, value) in data" ng-click="setCurrent()" class="col-3 c-m-div c ng-class:{'b-bot' : value.bot}" data-toggle="modal" data-target="#{{value.modal}}">
 					<div class="ng-class:{'b-right' : value.edge}"></div>
 					<img class="c-m-item" src="{{value.img}}">
 					<h3>{{key}}</h3>
@@ -114,14 +114,14 @@
 									</div>
 								</div>
 								<div class="col-12 mod-l-bot">
-									<button ng-click="addTo('wish')" type="button" class="btn btn-info wish-btn"><span class="glyphicon glyphicon-list"></span><span class="mod-btn">Add to Wishlist</span></button>
-									<button ng-click="addTo('cart')" type="button" class="btn btn-success pull-right cart-btn"><span class="glyphicon glyphicon-shopping-cart"></span><span class="mod-btn">Add to Cart</span></button>
+									<button ng-click="addTo(key, 'wish')" type="button" class="btn btn-info wish-btn"><span class="glyphicon glyphicon-list"></span><span class="mod-btn">Add to Wishlist</span></button>
+									<button ng-click="addTo(key, 'cart')" type="button" class="btn btn-success pull-right cart-btn"><span class="glyphicon glyphicon-shopping-cart"></span><span class="mod-btn">Add to Cart</span></button>
 								</div>
 							</div>
 						</div>
 						<div class="mod-gallery">
 							<div class="mod-gallery-in flex">
-								<div ng-repeat="(key, value) in value.inv" ng-click="setCurrent(key)" class="mod-gallery-img ng-class:{'mgi-bord' : isSet(key)}">
+								<div ng-repeat="(key, value) in value.inv" ng-click="setCurrent()" class="mod-gallery-img ng-class:{'mgi-bord' : isSet(key)}">
 									<img src="{{value.img}}" ng-srcset="{{value.img | srcset}}">
 								</div>
 							</div>
