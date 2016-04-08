@@ -164,8 +164,15 @@
 		};
 
 		// Set custom amount of items within cart/wishlist
-		$scope.setAmount = function(key, x, type) {
+		$scope.setAmount = function(type) {
 			$('.fout').fadeOut("fast");
+			var x;
+			if(event.currentTarget.innerHTML == 'Delete') {
+				x = 0;
+			} else {
+				x = this.value.num;
+			}
+			var key = this.key;
 			var catalog = type + 'Cat';
 			var diff = ($scope[catalog][key].num - x);
 			$scope[catalog][key].num = x;
