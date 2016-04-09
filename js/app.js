@@ -111,7 +111,16 @@
 		};
 
 		// Moves a cart/wishlist item from one list to another in localStorage.
-		$scope.moveTo = function(item, amount, list) {
+		$scope.moveTo = function() {
+			var item = this.key;
+			var amount = this.value.num;
+			var button = event.currentTarget.innerHTML;
+			var list;
+			if(button.indexOf('Wish')) {
+				list = 'wish';
+			} else {
+				list = 'cart';
+			}
 			localStorage[list] += (item + '#' + amount + ',');
 			if(list == 'cart') {
 				$scope.wishCat[item].moved = true;
