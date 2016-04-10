@@ -92,7 +92,7 @@
 					<div class="modal-body dcont" ng-style="newWidth()" mobile-scroll>
 						<div class="mobile" ng-click="left()"><span class="glyphicon glyphicon-chevron-left mob-btn m-b-l"></span></div>
 						<div class="mobile" ng-click="right()"><span class="glyphicon glyphicon-chevron-right mob-btn m-b-r" ng-style="rightButton()"></span></div>
-						<div ng-repeat="(key, value) in value.inv" ng-show="isSet(key)" ng-init="buildList(key, value)" class="mod-l-cont dcont rbord" ng-style="singleWidth()">
+						<div ng-repeat="(key, value) in value.inv" ng-show="isSet()" ng-init="buildList(key, value)" class="mod-l-cont dcont rbord" ng-style="singleWidth()">
 							<div class="col-5 mod-l-img dcont">
 								<!--<div class="col-1 mobile" ng-click="left()"><span class="glyphicon glyphicon-chevron-left mob-btn m-b-l"></span></div> -->
 								<div class="col-12">
@@ -121,7 +121,7 @@
 						</div>
 						<div class="mod-gallery">
 							<div class="mod-gallery-in flex">
-								<div ng-repeat="(key, value) in value.inv" ng-click="setCurrent()" class="mod-gallery-img ng-class:{'mgi-bord' : isSet(key)}">
+								<div ng-repeat="(key, value) in value.inv" ng-click="setCurrent()" class="mod-gallery-img ng-class:{'mgi-bord' : isSet()}">
 									<img src="{{value.img}}" ng-srcset="{{value.img | srcset}}">
 								</div>
 							</div>

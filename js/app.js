@@ -57,7 +57,8 @@
 		};
 
 		// Boolean check for if an item should be displayed.
-		$scope.isSet = function(itemName) {
+		$scope.isSet = function() {
+			var itemName = this.key;
 			if($(window).width() < 601) {
 				return true;
 			}
