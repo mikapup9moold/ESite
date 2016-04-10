@@ -92,14 +92,17 @@
 		//localStorage.wish = '';
 
 		// Adds a cart/wishlist item to the localStorage variable.
-		$scope.addTo = function(list) {
+		$scope.addTo = function() {
 			checkLists();
 			var item = this.key;
-			if(list == 'wish') {
-				$('.glyphicon-list').addClass('wlist');
-			} else if (list == 'cart') {
+			var list;
+			var button = event.currentTarget.innerHTML;
+			if(button.indexOf('Cart')) {
+				list = 'cart';
 				$('.mod-list-btn.glyphicon-shopping-cart').addClass('scart');
-				$('.scart').animate({fontSize: '24px'}, 500);
+			} else {
+				list = 'wish';
+				$('.glyphicon-list').addClass('wlist');
 			}
 			var id = item.replace(/\s+/g, '') + 'Qty';
 			var num = $('#' + id + ' :selected').val();
