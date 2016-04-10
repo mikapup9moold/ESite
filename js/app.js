@@ -161,6 +161,8 @@
 
 		// Implements the cart/wishlist from localStorage string.
 		$scope.buildCart = function() {
+			$('.fout').fadeOut("fast");
+
 			// Initialize localStorage of cart and wishlist if they dont exist.
 			checkLists();
 
@@ -174,11 +176,13 @@
 			// Parse workable format further into referencable objects
 			$scope.cartCat = buildHTML($scope.cart);
 			$scope.wishCat = buildHTML($scope.wish);
+
+			$('.fout').fadeIn("slow");
 		};
 
 		// Set custom amount of items within cart/wishlist
 		$scope.setAmount = function(type) {
-			$('.fout').fadeOut("fast");
+			//$('.fout').fadeOut("fast");
 			var x;
 			if(event.currentTarget.innerHTML == 'Delete') {
 				x = 0;
@@ -198,7 +202,7 @@
 			}
 			str = str.replace('total#undefined,', '');
 			localStorage[type] = str;
-			$('.fout').fadeIn("slow");
+			//$('.fout').fadeIn("slow");
 		}
 
 		// Provides smooth transition from one modal to the other.
