@@ -137,13 +137,14 @@
 		}
 
 		// Builds scope reference of all items placed in cart/wishlist
-		function buildHTML(list) {
+		function buildHTML(list, type) {
 			var obj = {};
 			var total = 0;
 			for(var item in list) {
 				obj[item] = {};
 				obj[item].num = list[item];
 				obj[item].moved = false;
+				obj[item].type = type;
 				total += (list[item] * $scope.itemList[item].price);
 			}
 			obj.total = total;
@@ -176,16 +177,17 @@
 			$scope.wish = toJSON(localStorage.wish);
 
 			// Parse workable format further into referencable objects
-			$scope.cartCat = buildHTML($scope.cart);
-			$scope.wishCat = buildHTML($scope.wish);
+			$scope.cartCat = buildHTML($scope.cart, 'cart');
+			$scope.wishCat = buildHTML($scope.wish, 'wish');
 
 			$('.fout').fadeIn("slow");
 		};
 
 		// Set custom amount of items within cart/wishlist
-		$scope.setAmount = function(type) {
+		$scope.setAmount = function() {
 			//$('.fout').fadeOut("fast");
 			var x;
+			var type = this.value.type;
 			if(event.currentTarget.innerHTML == 'Delete') {
 				x = 0;
 			} else {
