@@ -167,7 +167,7 @@
 								<td></td>
 								<td>
 									<span ng-click="deleteAll('cart'); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-									<span ng-click="copyAll('cart', 'wish')" class="s-btn">Copy All to Wish List</span>
+									<span ng-click="copyAll()" class="s-btn">Copy All to Wish List</span>
 									<span ng-show="copied.cart" class="glyphicon glyphicon-ok green"></span>
 								</td>
 								<td>Subtotal:<br>{{cartCat.total | currency}}</td>
@@ -194,7 +194,7 @@
 									<span ng-click="deleteAll('cart'); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 								</td>
 								<td>
-									<span ng-click="copyAll('cart', 'wish')" class="s-btn">Copy All to Wishlist</span>
+									<span ng-click="copyAll()" class="s-btn">Copy All to Wishlist</span>
 									<span ng-show="copied.cart" class="glyphicon glyphicon-ok green"></span>
 								</td>
 								<td>Subtotal:<br>{{cartCat.total | currency}}</td>
@@ -241,7 +241,7 @@
 								<td></td>
 								<td>
 									<span ng-click="deleteAll('wish'); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-									<span ng-click="copyAll('wish', 'cart')" class="s-btn">Copy All to Shopping Cart</span>
+									<span ng-click="copyAll()" class="s-btn">Copy All to Shopping Cart</span>
 									<span ng-show="copied.wish" class="glyphicon glyphicon-ok green"></span>
 								</td>
 								<td>Subtotal:<br>{{wishCat.total | currency}}</td>
@@ -271,7 +271,7 @@
 									<span ng-click="deleteAll('wish'); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 								</td>
 								<td>
-									<span ng-click="copyAll('wish', 'cart')" class="s-btn">Copy All to Wishlist</span>
+									<span ng-click="copyAll()" class="s-btn">Copy All to Wishlist</span>
 									<span ng-show="copied.wish" class="glyphicon glyphicon-ok green"></span>
 								</td>
 								<td>Subtotal:<br>{{cartCat.total | currency}}</td>

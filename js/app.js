@@ -239,7 +239,16 @@
 		$scope.copied = {'cart' : false, 'wish' : false};
 
 		// Copies one list to another.
-		$scope.copyAll = function(list1, list2) {
+		$scope.copyAll = function() {
+			var list1;
+			var list2;
+			if(event.currentTarget.innerHTML.indexOf('Cart')) {
+				list1 = 'wish';
+				list2 = 'cart';
+			} else {
+				list1 = 'cart';
+				list2 = 'wish';
+			}
 			localStorage[list2] += localStorage[list1];
 			$scope.copied[list1] = true;
 		}
