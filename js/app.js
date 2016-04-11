@@ -30,7 +30,9 @@
 
 		// Constructs local reference to all the available items for sale.
 		// Acts as a key/value pair for referencing items by their unique name.
-		$scope.buildList = function(key, value) {
+		$scope.buildList = function() {
+			var key = this.key;
+			var value = this.value;
 			$scope.itemList[key] = value;
 		}
 
