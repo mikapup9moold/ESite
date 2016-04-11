@@ -216,7 +216,7 @@
 			$('.mob-btn').css({transform : 'translate3d(0, 0, 0)'});
 			var mod1;
 			var mod2;
-			if(event.currentTarget.title.indexOf('Cart')) {
+			if(event.currentTarget.title.indexOf('Cart') >= 0) {
 				mod2 = 'cart';
 			} else {
 				mod2 = 'wishList';
