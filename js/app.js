@@ -206,11 +206,17 @@
 		}
 
 		// Provides smooth transition from one modal to the other.
-		$scope.swapModal = function(mod2) {
+		$scope.swapModal = function() {
 			// Reset the position of the mobile scrolling.
 			$('.modal-body').css({transform : 'translate3d(0, 0, 0)'});
 			$('.mob-btn').css({transform : 'translate3d(0, 0, 0)'});
 			var mod1;
+			var mod2;
+			if(event.currentTarget.title.indexOf('Cart')) {
+				mod2 = 'cart';
+			} else {
+				mod2 = 'wishList';
+			}
 			if(this.value) {
 				mod1 = this.value.modal;				
 			} else {
