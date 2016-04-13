@@ -257,6 +257,14 @@
 			$scope.copied[list1] = true;
 		}
 
+		$scope.deleteAllCart = function() {
+			$scope.deleteAll('cart');
+		}
+
+		$scope.deleteAllWish = function() {
+			$scope.deleteAll('wish');
+		}
+
 		// Deletes all items from specific list.
 		// Also includes possibility of including an undo button.
 		$scope.deleteAll = function(list) {

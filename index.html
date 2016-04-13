@@ -166,7 +166,7 @@
 							<tr ng-show="cartCat.total" class="fout">
 								<td></td>
 								<td>
-									<span ng-click="deleteAll('cart'); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<span ng-click="deleteAllCart(); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 									<span ng-click="copyAll()" class="s-btn">Copy All to Wish List</span>
 									<span ng-show="copied.cart" class="glyphicon glyphicon-ok green"></span>
 								</td>
@@ -191,7 +191,7 @@
 							<tr></tr>
 							<tr ng-show="cartCat.total" class="fout">
 								<td>
-									<span ng-click="deleteAll('cart'); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+									<span ng-click="deleteAllCart(); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 								</td>
 								<td>
 									<span ng-click="copyAll()" class="s-btn">Copy All to Wishlist</span>
@@ -240,7 +240,7 @@
 							<tr ng-show="wishCat.total" class="fout">
 								<td></td>
 								<td>
-									<span ng-click="deleteAll('wish'); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<span ng-click="deleteAllWish(); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 									<span ng-click="copyAll()" class="s-btn">Copy All to Shopping Cart</span>
 									<span ng-show="copied.wish" class="glyphicon glyphicon-ok green"></span>
 								</td>
@@ -268,7 +268,7 @@
 							<tr></tr>
 							<tr ng-show="wishCat.total" class="fout">
 								<td>
-									<span ng-click="deleteAll('wish'); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+									<span ng-click="deleteAllWish(); buildCart()" class="s-btn">Delete All</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 								</td>
 								<td>
 									<span ng-click="copyAll()" class="s-btn">Copy All to Wishlist</span>
