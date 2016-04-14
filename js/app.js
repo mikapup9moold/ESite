@@ -67,21 +67,7 @@
 			return $scope.current === itemName;
 		};
 
-		// Toggles left/right scroll for mobile implementation of available items.
-		$scope.mobileToggle = function(lr, parent, item) {
-			var list = $scope.mobileToggleList[parent];
-			var len = list.length;
-			var index;
-			for(i = 0; i < len; i++) {
-				if(list[i] == item) {
-					index = i;
-				}
-			}
-			$scope.setCurrent(list[index + lr]);
-
-		}
-
-		// Builds numbered index for a given range. (currently obsolete and unused in implemenation)
+		// Builds numbered index for a given range.
 		$scope.range = function(num) {
 			var range = [];
 			num = parseInt(num);
