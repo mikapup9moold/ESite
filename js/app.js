@@ -77,9 +77,6 @@
 			return range;
 		};
 
-		//localStorage.cart = '';
-		//localStorage.wish = '';
-
 		// Adds a cart/wishlist item to the localStorage variable.
 		$scope.addTo = function() {
 			checkLists();

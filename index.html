@@ -51,7 +51,6 @@
 					</ul>
 					<div class="col-12 mobile-menu"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
 				</div>
-				<!--<div class="alert alert-warning construction" role="alert">Site currently under construction.</div>-->
 				<div class="col-12 title"><h1>Lowgami</h1><h2>Handmade Japanese Paper Crafts</h2></div>
 			</div>
 		</div>
@@ -94,11 +93,9 @@
 						<div class="mobile" ng-click="right()"><span class="glyphicon glyphicon-chevron-right mob-btn m-b-r" ng-style="rightButton()"></span></div>
 						<div ng-repeat="(key, value) in value.inv" ng-show="isSet()" ng-init="buildList()" class="mod-l-cont dcont rbord" ng-style="singleWidth()">
 							<div class="col-5 mod-l-img dcont">
-								<!--<div class="col-1 mobile" ng-click="left()"><span class="glyphicon glyphicon-chevron-left mob-btn m-b-l"></span></div> -->
 								<div class="col-12">
 									<img src="{{value.img}}" ng-srcset="{{value.img | srcset}}">
 								</div>
-								<!--<div class="col-1 mobile" ng-click="right()"><span class="glyphicon glyphicon-chevron-right mob-btn m-b-r"></span></div> -->
 							</div>
 							<div class="col-7 mod-l-text">
 								<div class="col-12 mod-l-top">
