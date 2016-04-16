@@ -169,6 +169,9 @@
 		// Set custom amount of items within cart/wishlist
 		$scope.setAmount = function() {
 			//$('.fout').fadeOut("fast");
+			if(!this.value.prev) {
+				this.value.prev = 0;
+			}
 			var x;
 			var type = this.value.type;
 			if(event.currentTarget.innerHTML == 'Delete') {
@@ -178,7 +181,7 @@
 			}
 			var key = this.key;
 			var catalog = type + 'Cat';
-			var diff = ($scope[catalog][key].num - x);
+			var diff = (this.value.prev - x);
 			$scope[catalog][key].num = x;
 			$scope[catalog][key].total -= ($scope.itemList[key].price * diff);
 			var str = '';
@@ -189,6 +192,10 @@
 			}
 			str = str.replace('total#undefined,', '');
 			localStorage[type] = str;
+			if(Math.abs(diff) > 0) {
+				this.value.prev = this.value.num;
+				$scope.buildCart();
+			}
 			//$('.fout').fadeIn("slow");
 		}
 

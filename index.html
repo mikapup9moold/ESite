@@ -146,15 +146,15 @@
 							<tr ng-repeat="(key, value) in cartCat" ng-hide="$last" class="fout">
 								<td class="cartImg"><img src="{{itemList[key].img}}"></td>
 								<td><h5>{{key}}</h5><br>{{itemList[key].blurb | limitTo : 50}}...
-									<br><br><span ng-click="setAmount(); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<br><br><span ng-click="setAmount()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 									<span ng-click="moveTo()" class="s-btn">Copy to Wishlist </span>
 									<span ng-show="cartCat[key].moved" class="glyphicon glyphicon-ok green"></span>
 								</td>
 								<td>
 									<form>
 										<label>{{itemList[key].price | currency}}: 
-											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="setAmount()" ng-blur="setAmount(); buildCart()">
-											<input type="submit" value="Update Cart" ng-click="setAmount(); buildCart()">
+											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="setAmount()" ng-blur="setAmount()">
+											<input type="submit" value="Update Cart" ng-click="setAmount()">
 										</label>
 									</form>
 								</td>
@@ -176,11 +176,11 @@
 								<td colspan="2"><h5>{{key}}</h5><br>
 									<form>
 										<label>{{itemList[key].price | currency}}: 
-											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="setAmount()" ng-blur="setAmount(); buildCart()">
-											<input type="submit" value="Update" ng-click="setAmount(); buildCart()">
+											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="setAmount()" ng-blur="setAmount()">
+											<input type="submit" value="Update" ng-click="setAmount()">
 										</label>
 									</form>
-									<br><br><span ng-click="setAmount(); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<br><br><span ng-click="setAmount()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 									<span ng-click="moveTo()" class="s-btn">Copy to Wishlist </span>
 									<span ng-show="cartCat[key].moved" class="glyphicon glyphicon-ok green"></span>
 								</td>
@@ -220,15 +220,15 @@
 							<tr ng-repeat="(key, value) in wishCat" ng-hide="$last" class="fout">
 								<td class="cartImg"><img src="{{itemList[key].img}}"></td>
 								<td><h5>{{key}}</h5><br>{{itemList[key].blurb | limitTo : 50}}...
-									<br><br><span ng-click="setAmount(); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<br><br><span ng-click="setAmount()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 									<span ng-click="moveTo()" class="s-btn">Copy to Shopping Cart </span>
 									<span ng-show="wishCat[key].moved" class="glyphicon glyphicon-ok green"></span>
 								</td>
 								<td>
 									<form>
 										<label>{{itemList[key].price | currency}}: 
-											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="setAmount(); buildCart()" ng-blur="setAmount(); buildCart()">
-											<input type="submit" value="Update List" ng-click="setAmount(); buildCart()">
+											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="setAmount()" ng-blur="setAmount()">
+											<input type="submit" value="Update List" ng-click="setAmount()">
 										</label>
 									</form>
 								</td>
@@ -253,11 +253,11 @@
 								<td colspan="2"><h5>{{key}}</h5><br>
 									<form>
 										<label>{{itemList[key].price | currency}}: 
-											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="setAmount()" ng-blur="setAmount(); buildCart()">
-											<input type="submit" value="Update" ng-click="setAmount(); buildCart()">
+											<input type="number" name="input" ng-model="value.num" min="0" max="99" required ng-focus="setAmount()" ng-blur="setAmount()">
+											<input type="submit" value="Update" ng-click="setAmount()">
 										</label>
 									</form>
-									<br><br><span ng-click="setAmount(); buildCart()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<br><br><span ng-click="setAmount()" class="s-btn">Delete</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 									<span ng-click="moveTo()" class="s-btn">Copy to Cart </span>
 									<span ng-show="wishCat[key].moved" class="glyphicon glyphicon-ok green"></span>
 								</td>
