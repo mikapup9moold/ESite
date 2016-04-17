@@ -24,7 +24,7 @@
 		$(document).ready(function() {
 			var width = $(window).width();
 			if(width <= 600) {
-				$('.title').css('margin-top', (width * .445364) - 32 - 97);
+				$('.title').css('margin-top', (width * .445364) - 32 - 97 - 5);
 			}
 		});
 
