@@ -105,7 +105,7 @@
 			var amount = this.value.num;
 			var button = event.currentTarget.innerHTML;
 			var list;
-			if(button.indexOf('Wish')) {
+			if(button.indexOf('Wish') >= 0) {
 				list = 'wish';
 			} else {
 				list = 'cart';
