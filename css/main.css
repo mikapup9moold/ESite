@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-	font-size: 3vw;
+	font-size: 4vw;
 	margin: 0;
 	font-family: 'Dancing script', cursive;
 }
@@ -496,10 +496,6 @@ li:hover {
 	.mod-gallery-img {
 		width: 70%;
 		margin-left: 20px;
-	}
-
-	h3 {
-		font-size: 40px;
 	}
 }
 
