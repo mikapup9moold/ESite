@@ -762,6 +762,19 @@ li:hover {
 		padding-left: 8%;
 	}
 
+	.menu-holder {
+		position: relative;
+		width: 100%;
+	}
+
+	.mob-menu {
+		position: absolute;
+		background-color: white;
+		width: 75%;
+		right: 0;
+		left: 600px;
+	}
+
 }
 
 @media screen and (max-width: 375px) {
