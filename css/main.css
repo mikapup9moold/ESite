@@ -767,7 +767,7 @@ li:hover {
 	}
 
 	.menu-holder {
-		display: initial;
+		display: block;
 		position: relative;
 		width: 100%;
 	}
@@ -777,7 +777,13 @@ li:hover {
 		background-color: white;
 		width: 75%;
 		right: 0;
-		left: 600px;
+		//left: 600px;
+		border: 2px solid #337ab7;
+		border-radius: 4px;
+	}
+
+	.active {
+		margin: 0;
 	}
 
 }
