@@ -782,8 +782,16 @@ li:hover {
 		border-radius: 4px;
 	}
 
+	.nav-stacked li {
+		margin-right: 0;
+	}
+
 	.active {
 		margin: 0;
+	}
+
+	.nav-pills > li.active > a {
+		border-radius: 0;
 	}
 
 }
