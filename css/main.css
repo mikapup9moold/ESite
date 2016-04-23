@@ -429,6 +429,10 @@ li:hover {
 	display: none;
 }
 
+.menu-holder {
+	display: none;
+}
+
 @media screen and (max-width: 1217px) {
 	.b-right {
 		display: none;
@@ -763,6 +767,7 @@ li:hover {
 	}
 
 	.menu-holder {
+		display: initial;
 		position: relative;
 		width: 100%;
 	}
