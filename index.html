@@ -39,7 +39,7 @@
 		</script>
 	</head>
 	<body ng-app="eStore" ng-controller="InventoryController">
-    <div class="menu-holder">
+    <div class="menu-holder" ng-show="mobileMenuToggle">
 	    <div class="mob-menu">
 		    <ul class="nav nav-pills nav-stacked">
 			  <li role="menu" class="active"><a href="#">Menu</a></li>
@@ -60,7 +60,7 @@
 						<li ng-click="buildCart()" data-toggle="modal" data-target="#wishList">Wish List</li>
 						<li ng-click="buildCart()" data-toggle="modal" data-target="#cart">Cart<span class="glyphicon glyphicon-shopping-cart"></span></li>
 					</ul>
-					<div class="col-12 mobile-menu"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+					<div class="col-12 mobile-menu"><span class="glyphicon glyphicon-menu-hamburger" ng-click="mobileMenu()"></span></div>
 				</div>
 				<div class="col-12 title"><h1>Lowgami</h1><h2>Handmade Japanese Paper Crafts</h2></div>
 			</div>

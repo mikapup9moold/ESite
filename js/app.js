@@ -19,6 +19,7 @@
 		$scope.mobileToggleList = {};
 		$scope.current = false;
 		$scope.category = false;
+		$scope.mobileMenuToggle = false;
 
 		// Set transparent banner height for mobile devices
 		$(document).ready(function() {
@@ -27,6 +28,14 @@
 				$('.title').css('margin-top', (width * .445364) - 32 - 97 - 5);
 			}
 		});
+
+		$scope.mobileMenu = function() {
+			if($scope.mobileMenuToggle) {
+				 return $scope.mobileMenuToggle = false;
+			} else {
+				 return $scope.mobileMenuToggle = true;
+			}
+		}
 
 		// Constructs local reference to all the available items for sale.
 		// Acts as a key/value pair for referencing items by their unique name.
