@@ -272,6 +272,18 @@
 			localStorage[list] = '';
 		}
 
+		var menuLogic = function() {
+			console.log("test");
+			$(document).click(function() {
+				$scope.mobileMenu();
+			});
+			$('.menu-option').click(function(e) {
+				e.stopPropagation();
+			});
+		};
+
+		menuLogic();
+
 	});
 
 	// Allows for easy string manipulation within DOM for naming IDs
