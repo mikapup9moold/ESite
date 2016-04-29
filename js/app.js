@@ -37,6 +37,13 @@
 			}
 		}
 
+		$scope.mobileMenuClose = function() {
+			console.log("mmc");
+			if($scope.mobileMenuToggle) {
+				return $scope.mobileMenuToggle = false;
+			}
+		}
+
 		// Constructs local reference to all the available items for sale.
 		// Acts as a key/value pair for referencing items by their unique name.
 		$scope.buildList = function() {
@@ -271,18 +278,6 @@
 			localStorage[undo] = localStorage[list];
 			localStorage[list] = '';
 		}
-
-		var menuLogic = function() {
-			console.log("test");
-			$(document).click(function() {
-				$scope.mobileMenu();
-			});
-			$('.menu-option').click(function(e) {
-				e.stopPropagation();
-			});
-		};
-
-		menuLogic();
 
 	});
 
