@@ -430,7 +430,17 @@ li:hover {
 }
 
 .menu-holder {
-	display: none;
+	//display: none;
+	//left: 400px;
+	transition: .25s ease-in-out all;
+}
+
+.menu-holder.ng-hide-remove {
+	left: 300px;
+}
+
+.menu-holder.ng-hide-add {
+	left: 0;
 }
 
 @media screen and (max-width: 1217px) {
@@ -764,6 +774,7 @@ li:hover {
 
 	.menu-holder {
 		display: block;
+		left: 0;
 		position: relative;
 		width: 100%;
 	}
