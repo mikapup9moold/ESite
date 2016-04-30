@@ -787,6 +787,7 @@ li:hover {
 		//left: 600px;
 		border: 2px solid #337ab7;
 		border-radius: 4px;
+		font-size: 16px;
 	}
 
 	.nav-stacked li {
