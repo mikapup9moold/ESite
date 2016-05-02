@@ -537,6 +537,11 @@ li:hover {
 		width: 100%;
 	}
 
+	.mobile-menu {
+		padding: 15px;
+		padding-bottom: 0;
+	}
+
 	.c-m-div {
 		width: 100%;
 	}
@@ -556,8 +561,10 @@ li:hover {
 	.h-menu {
 		font-size: 16px;
 		width: 100%;
-		padding: 10px;
+		padding: 0;
 		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.title {
