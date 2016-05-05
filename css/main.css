@@ -429,19 +429,18 @@ li:hover {
 	display: none;
 }
 
+
 .menu-holder {
-	//display: none;
-	//left: 400px;
-	transition: .25s ease-in-out all;
+	left: 0;
 }
 
-.menu-holder.ng-hide-remove {
+.menu-holder.ng-hide {
 	left: 300px;
 }
 
-.menu-holder.ng-hide-add {
-	left: 0;
-}
+/*.menu-holder.ng-hide-add {
+	animation: 1s mobMenu;
+}*/
 
 @media screen and (max-width: 1217px) {
 	.b-right {
@@ -778,13 +777,6 @@ li:hover {
 		margin-top: 14vw;
 		margin-bottom: 14vw;
 		padding-left: 8%;
-	}
-
-	.menu-holder {
-		display: block;
-		left: 0;
-		position: relative;
-		width: 100%;
 	}
 
 	.mob-menu {
