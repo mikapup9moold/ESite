@@ -99,12 +99,12 @@
 			var item = this.key;
 			var list;
 			var button = event.currentTarget.innerHTML;
-			if(button.indexOf('Cart')) {
+			if(button.indexOf('Cart') >= 0) {
 				list = 'cart';
 				$('.mod-list-btn.glyphicon-shopping-cart').addClass('scart');
 			} else {
 				list = 'wish';
-				$('.glyphicon-list').addClass('wlist');
+				$('.mod-list-btn.glyphicon-list').addClass('wlist');
 			}
 			var id = item.replace(/\s+/g, '') + 'Qty';
 			var num = $('#' + id + ' :selected').val();
