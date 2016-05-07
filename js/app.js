@@ -208,7 +208,7 @@
 			}
 			str = str.replace('total#undefined,', '');
 			localStorage[type] = str;
-			if(Math.abs(diff) > 0) {
+			if(Math.abs(diff) > 0 || x == 0) {
 				this.value.prev = this.value.num;
 				$scope.buildCart();
 			}
