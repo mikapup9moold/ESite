@@ -29,6 +29,7 @@
 			}
 		});
 
+		// Toggles the mobile menu
 		$scope.mobileMenu = function() {
 			if($scope.mobileMenuToggle) {
 				 return $scope.mobileMenuToggle = false;
@@ -37,8 +38,8 @@
 			}
 		}
 
+		// Moves the mobile menu offscreen
 		$scope.mobileMenuClose = function() {
-			console.log("mmc");
 			if($scope.mobileMenuToggle) {
 				return $scope.mobileMenuToggle = false;
 			}
