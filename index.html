@@ -104,11 +104,7 @@
 						<div class="mobile" ng-click="left()"><span class="glyphicon glyphicon-chevron-left mob-btn m-b-l"></span></div>
 						<div class="mobile" ng-click="right()"><span class="glyphicon glyphicon-chevron-right mob-btn m-b-r" ng-style="rightButton()"></span></div>
 						<div ng-repeat="(key, value) in value.inv" ng-show="isSet()" ng-init="buildList()" class="mod-l-cont dcont rbord" ng-style="singleWidth()">
-							<div class="col-5 mod-l-img dcont">
-								<div class="col-12">
-									<img src="{{value.img}}" ng-srcset="{{value.img | srcset}}">
-								</div>
-							</div>
+							<modal-image class="col-5 mod-l-img dcont"></modal-image>
 							<div class="col-7 mod-l-text">
 								<div class="col-12 mod-l-top">
 									<h4>{{key}}</h4>
