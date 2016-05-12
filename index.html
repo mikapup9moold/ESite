@@ -124,13 +124,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mod-gallery">
-							<div class="mod-gallery-in flex">
-								<div ng-repeat="(key, value) in value.inv" ng-click="setCurrent()" class="mod-gallery-img ng-class:{'mgi-bord' : isSet()}">
-									<img src="{{value.img}}" ng-srcset="{{value.img | srcset}}">
-								</div>
-							</div>
-						</div>
+						<modal-gallery class="mod-gallery"></modal-gallery>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

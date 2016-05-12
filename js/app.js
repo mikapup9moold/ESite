@@ -289,6 +289,13 @@
 		};
 	});
 
+	app.directive('modalGallery', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'templates/modal-gallery.html'
+		}
+	});
+
 	// Allows for easy string manipulation within DOM for naming IDs
 	app.filter('deleteSpaces', function() {
 		return function(str) {
