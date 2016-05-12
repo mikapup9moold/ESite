@@ -303,6 +303,13 @@
 		}
 	});
 
+	app.directive('modalButtons', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'templates/modal-buttons.html'
+		}
+	});
+
 	// Allows for easy string manipulation within DOM for naming IDs
 	app.filter('deleteSpaces', function() {
 		return function(str) {
