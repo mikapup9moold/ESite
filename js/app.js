@@ -296,6 +296,13 @@
 		}
 	});
 
+	app.directive('modalText', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'templates/modal-text.html'
+		}
+	});
+
 	// Allows for easy string manipulation within DOM for naming IDs
 	app.filter('deleteSpaces', function() {
 		return function(str) {

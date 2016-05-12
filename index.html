@@ -105,24 +105,7 @@
 						<div class="mobile" ng-click="right()"><span class="glyphicon glyphicon-chevron-right mob-btn m-b-r" ng-style="rightButton()"></span></div>
 						<div ng-repeat="(key, value) in value.inv" ng-show="isSet()" ng-init="buildList()" class="mod-l-cont dcont rbord" ng-style="singleWidth()">
 							<modal-image class="col-5 mod-l-img dcont"></modal-image>
-							<div class="col-7 mod-l-text">
-								<div class="col-12 mod-l-top">
-									<h4>{{key}}</h4>
-									<p class="mod-blurb">{{value.blurb}}</p>
-									<div class="col-12">{{value.price | currency}} USD
-										<span class="pull-right">
-											<label>Qty :</label>
-											<select id="{{key | deleteSpaces}}Qty" name="quantity" autocomplete="off">
-												<option ng-repeat="i in range(value.qty)" value="{{i}}">{{i}}</option>
-											</select>
-										</span>
-									</div>
-								</div>
-								<div class="col-12 mod-l-bot">
-									<button ng-click="addTo()" type="button" class="btn btn-info wish-btn"><span class="glyphicon glyphicon-list"></span><span class="mod-btn">Add to Wishlist</span></button>
-									<button ng-click="addTo()" type="button" class="btn btn-success pull-right cart-btn"><span class="glyphicon glyphicon-shopping-cart"></span><span class="mod-btn">Add to Cart</span></button>
-								</div>
-							</div>
+							<modal-text class="col-7 mod-l-text"></modal-text>
 						</div>
 						<modal-gallery class="mod-gallery"></modal-gallery>
 					</div>
