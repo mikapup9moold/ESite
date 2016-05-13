@@ -218,6 +218,10 @@
 
 		// Provides smooth transition from one modal to the other.
 		$scope.swapModal = function() {
+			// Checks to see which between wishlist/cart is open
+			var cartShown = $('#cart').is(':visible');
+			var wishShown = $('#wishList').is(':visible');
+
 			var mod1;
 			var mod2;
 			if(event.currentTarget.title.indexOf('Cart') >= 0) {
@@ -225,16 +229,20 @@
 			} else {
 				mod2 = 'wishList';
 			}
+
 			if(this.value) {
-				mod1 = this.value.modal;				
-			} else {
-				if(mod2 == 'cart') {
-					mod1 = 'wishList';
-				} else {
-					mod1 = 'cart';
-				}
+				mod1 = this.value.modal;			
 			}
 
+			if(cartShown) {
+				mod1 = 'cart';
+			}
+
+			if(wishShown) {
+				mod1 = 'wishList';
+			}
+
+			// Swap modal if switching to a different one
 			if(mod1 != mod2) {
 				// Reset the position of the mobile scrolling.
 				$('.modal-body').css({transform : 'translate3d(0, 0, 0)'});
