@@ -218,9 +218,6 @@
 
 		// Provides smooth transition from one modal to the other.
 		$scope.swapModal = function() {
-			// Reset the position of the mobile scrolling.
-			$('.modal-body').css({transform : 'translate3d(0, 0, 0)'});
-			$('.mob-btn').css({transform : 'translate3d(0, 0, 0)'});
 			var mod1;
 			var mod2;
 			if(event.currentTarget.title.indexOf('Cart') >= 0) {
@@ -239,6 +236,10 @@
 			}
 
 			if(mod1 != mod2) {
+				// Reset the position of the mobile scrolling.
+				$('.modal-body').css({transform : 'translate3d(0, 0, 0)'});
+				$('.mob-btn').css({transform : 'translate3d(0, 0, 0)'});
+
 				// Event listener necessary for smooth transition with Bootstrap's modals
 				$("#" + mod1).on('hidden.bs.modal', function(e) {
 					$("#" + mod2).modal('show');
