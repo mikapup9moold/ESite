@@ -95,9 +95,7 @@
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<span ng-click="buildCart(); swapModal()" class="glyphicon glyphicon-shopping-cart top-menu mod-list-btn" title="Shopping Cart"></span>
-						<span ng-click="buildCart(); swapModal()" class="glyphicon glyphicon-list top-menu mod-list-btn" title="Wish List"></span>
+						<modal-buttons></modal-buttons>
 						<h3 class="modal-title" id="{{key}} Modal">{{key}}</h3>
 					</div>
 					<div class="modal-body dcont" ng-style="newWidth()" mobile-scroll>
@@ -193,9 +191,7 @@
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<span ng-click="buildCart(); swapModal()" class="glyphicon glyphicon-shopping-cart top-menu close mod-list-btn" title="Shopping Cart"></span>
-						<span ng-click="buildCart();" class="glyphicon glyphicon-list top-menu close mod-list-btn" title="Wish List"></span>
+						<modal-buttons></modal-buttons>
 						<h3 class="modal-title" id="top-menu">Wish List</h3>
 					</div>
 					<div class="modal-body dcont">
