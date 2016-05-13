@@ -238,12 +238,14 @@
 				}
 			}
 
-			// Event listener necessary for smooth transition with Bootstrap's modals
-			$("#" + mod1).on('hidden.bs.modal', function(e) {
-				$("#" + mod2).modal('show');
-				$("#" + mod1).off();
-			});
-			$("#" + mod1).modal('hide');
+			if(mod1 != mod2) {
+				// Event listener necessary for smooth transition with Bootstrap's modals
+				$("#" + mod1).on('hidden.bs.modal', function(e) {
+					$("#" + mod2).modal('show');
+					$("#" + mod1).off();
+				});
+				$("#" + mod1).modal('hide');
+			}
 		}
 
 		// Initialize the status of the 'Copy All to' button
