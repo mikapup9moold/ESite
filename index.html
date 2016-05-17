@@ -223,7 +223,6 @@
 							<tr ng-repeat="(key, value) in wishCat" ng-hide="$last" class="fout">
 								<td class="cartImg">
 									<img src="{{itemList[key].img}}">
-
 								</td>
 								<td colspan="2"><h5>{{key}}</h5><br>
 									<form>
@@ -261,12 +260,28 @@
 				<div class="col-7 h-menu f-menu">
 					<ul>
 						<li>About</li>
-						<li>FAQ</li>
+						<li data-toggle="modal" data-target="#FAQModal">FAQ</li>
 						<li>Contact</li>
 					</ul>
 				</div>
 			</div>
 		</div>
+
+		<div class="modal fade" id="FAQModal" tabindex="-1" role="dialog" aria-labelledby="Modal FAQ">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<modal-buttons></modal-buttons>
+						<h3 class="modal-title" id="FAQ-Modal">FAQ</h3>
+					</div>
+					<div class="modal-body dcont">
+						<div>FAQ Questions</div>
+					</div>
+					<modal-close></modal-close>
+				</div>
+			</div>
+		</div>		
+
 	<script src="js/parallax.js" type="text/javascript"></script>
 	</body>
 
