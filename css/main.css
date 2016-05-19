@@ -90,37 +90,46 @@ table {
 	padding: 15px;
 }
 
-ul {
+.foot {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-ul::selection {
+.foot::selection {
 	background: none;
 }
 
-ul::-moz-selection {
+.foot::-moz-selection {
 	background: none;
 }
 
-li {
+.foot>li {
 	display: inline;
 	margin-left: 15px;
 	margin-right: 15px;
 	cursor: pointer;
 }
 
-li::selection {
+.foot>li::selection {
 	background: none;
 }
 
-li::-moz-selection {
+.foot>li::-moz-selection {
 	background: none;
 }
 
-li:hover {
+.foot>li:hover {
 	text-decoration: underline;
+}
+
+.faq-list {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+.faq-list>li {
+	margin-bottom: 10px;
 }
 
 .s-btn:hover {
