@@ -132,6 +132,27 @@ table {
 	margin-bottom: 10px;
 }
 
+.header-menu>ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header-menu>ul::selection {
+	background: none;
+}
+
+.header-menu>li {
+	display: inline;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.header-menu>li:hover {
+	text-decoration: underline;
+}
+
 .s-btn:hover {
 	cursor: pointer;
 	text-decoration: underline;
