@@ -29,6 +29,7 @@
 		<script src="js/items.js" type="text/javascript"></script>
 		<script src="js/app.js" type="text/javascript"></script>
 		<script src="js/mobileScroll.js" type="text/javascript"></script>
+		<script src="https://www.paypalobjects.com/api/checkout.js" data-version-4></script>
 
 		<!-- Bug with modal window having a scrollbar.  When middle mouse is clicked to drag scroll it breaks the page.
 		https://bugs.webkit.org/show_bug.cgi?id=19033 -->
@@ -148,7 +149,7 @@
 									<span ng-click="copyAll()" class="s-btn">Copy All to Wish List</span>
 									<span ng-show="copied.cart" class="glyphicon glyphicon-ok green"></span>
 								</td>
-								<td>Subtotal:<br>{{cartCat.total | currency}}</td>
+								<td>Subtotal:<br>{{cartCat.total | currency}}<div id="paypal-button"></div></td>
 							</tr>
 						</table>
 						<table class="table table-striped mobile">
@@ -175,7 +176,8 @@
 									<span ng-click="copyAll()" class="s-btn">Copy All to Wishlist</span>
 									<span ng-show="copied.cart" class="glyphicon glyphicon-ok green"></span>
 								</td>
-								<td>Subtotal:<br>{{cartCat.total | currency}}</td>
+								<td>Subtotal:<br>{{cartCat.total | currency}}<div id="paypal-button"></div></td>
+
 							</tr>
 						</table>
 					</div>
@@ -308,6 +310,7 @@
 		</div>
 
 	<script src="js/parallax.js" type="text/javascript"></script>
+	<script src="js/ppal.js" type="text/javascript"></script>
 	</body>
 
 </html>
